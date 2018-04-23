@@ -1,0 +1,9 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+68.100.155.109 - - [21/Apr/2018 01:46:09] "GET / HTTP/1.1" 200 -
+68.100.155.109 - - [21/Apr/2018 01:46:14] "GET / HTTP/1.1" 200 -
+68.100.155.109 - - [21/Apr/2018 01:46:14] "GET /favicon.ico HTTP/1.1" 404 -
+68.100.155.109 - - [21/Apr/2018 01:46:19] "GET / HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+68.100.155.109 - - [21/Apr/2018 01:50:08] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "app"
