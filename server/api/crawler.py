@@ -65,24 +65,49 @@ def log_error(e):
 def api_hello():
     if request.method == 'POST':
         myurl = request.form.get('url')
+        dfs = request.form.get('dfs')
     else:
-        myurl = "http://arstechnica.com"
-
-    results = geturls(myurl)
+        myurl = "http://yahoo.com"
+        dfs = "bfs"
+    links = []
+    results = BuildList(myurl,links,2)
      
     return jsonify(results)
         #geturls()
      
-def geturls(myurl):
+
+#def ReadURLOnPage(url):
+def BuildList(URL,URLList,depth):
+    if (depth==0):
+        return URLList
+    #childURLList = []
+    URLList = ReadURLOnPage(URL,URLList,depth)
+    for url in URLList:
+         if (url.get('parenturl',None) == URL):
+             URLList = ReadURLOnPage(url.get('url',None),URLList,depth-1)
+    depth = depth - 1
+    return URLList
+
+def ReadURLOnPage(myurl, links,depth):
     raw_html = simple_get(myurl)
     html = BeautifulSoup(raw_html, 'html.parser')
-    links = []
+   
+    dep = int(depth)
 #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/ 
+    id = 0
     for link in html.findAll('a', attrs={'href': re.compile("^http://")}):
-        links.append(link.get('href'))
+       # links.append(link.get('href'))
+        foundurl = link.get('href')
+        id = id + 1
+        urlrecord = {"depth":depth,"id": id,"url":foundurl,"parenturl":myurl}
+        
+        links.append(urlrecord)
         #print(links)
-        l =  len(raw_html)
+        
+     
+    l =  len(raw_html)
     return links
 
 if __name__ == "__main__":
+    #app.run(host= '0.0.0.0') 
     app.run(host= '172.31.22.173',port=5002)
