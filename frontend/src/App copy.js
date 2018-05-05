@@ -23,7 +23,7 @@ class App extends Component {
         //mode: 'no-cors',
         headers: {
             "Accept": "application/json"
-  }})
+          }})
       .then(response => {
         console.log(response);
         if (response.ok) {

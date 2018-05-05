@@ -1,21 +1,25 @@
 import React from 'react';
 import { SearchTypeInput } from './SearchTypeInput';
 import { TextInput, NumberListInput } from './WebsiteInput';
+import PropTypes from 'prop-types';
 
 export class FormContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       website: '',
-      sType: '',
+      sType: 'DFS',
       sLimit: '',
       searchTerm: '',
-      advancedOn: false
+      advancedOn: false,
+      isLoading: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.toggleAdvancedOptions = this.toggleAdvancedOptions.bind(this);
+    this.verifyInput = this.verifyInput.bind(this);
+    this.createQueryData = this.createQueryData.bind(this);
   }
 
   toggleAdvancedOptions(){
@@ -33,14 +37,35 @@ export class FormContainer extends React.Component {
       });
   }
 
+  verifyInput(){
+    if(this.state.website !== '' && this.state.sType !== '' && this.state.sLimit !== ''){
+      if(this.state.advanceOn && this.state.searchTerm !== ''){
+        return true;
+      }
+      return true;
+    }
+    return false;
+  }
+
+  createQueryData(){
+    return JSON.stringify({
+      url: this.state.website,
+      depth: this.state.sLimit,
+    })
+  }
+
   handleSubmit(e) {
-    alert('A name was submitted: ' + this.state.value);
+    console.log(e);
     e.preventDefault();
+    console.log(this.verifyInput())
+    if(this.verifyInput()){
+      this.props.onQueryAPI(this.createQueryData());
+    }
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <TextInput value={this.state.value} name="website" onChange={this.handleChange} 
           label="Website:" isActive={true} />   
         <SearchTypeInput name="sType" onChange={this.handleChange}/>
@@ -58,3 +83,7 @@ export class FormContainer extends React.Component {
     );
   }
 }
+
+FormContainer.propTypes = {
+  onQueryAPI: PropTypes.func.isRequired
+};
