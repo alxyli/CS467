@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { FormContainer } from './FormContainer';
-
+import { LoadingAnimation } from './LoadingAnimation';
 import './App.css';
 
-const API = 'http://52.39.153.11:5002/findurl';
-//const DEFAULT_QUERY = '';
+const API = 'http://52.39.153.11:5000/findurl';
 
 class App extends Component {
   constructor(props) {
@@ -22,13 +21,14 @@ class App extends Component {
 
   handleAPIRequest(dataIn) {
     this.setState({ isLoading: true, hasLoaded: false });
+    console.log(dataIn);
+    console.log(JSON.stringify(dataIn))
     fetch(API, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: dataIn
+      body: JSON.stringify({
+        url: "https://www.google.com/",
+        depth: 1
+      }),
+      method: 'POST'
       })
       .then(response => {
         console.log(response);
@@ -50,7 +50,11 @@ class App extends Component {
     }
 
     if (isLoading) {
-      return <p>Loading ...</p>;
+      return (
+        <div>
+          <LoadingAnimation />
+        </div>
+      );
     }
 
     if (hasLoaded){
@@ -67,9 +71,16 @@ class App extends Component {
 
     return (
       <div>
+        <LoadingAnimation />
+      </div>
+
+    );
+
+    /*return (
+      <div>
         <FormContainer onQueryAPI={this.handleAPIRequest} />
       </div>
-    );
+    );*/
   }
 }
 

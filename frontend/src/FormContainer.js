@@ -48,10 +48,10 @@ export class FormContainer extends React.Component {
   }
 
   createQueryData(){
-    return JSON.stringify({
+    return {
       url: this.state.website,
       depth: this.state.sLimit,
-    })
+    }
   }
 
   handleSubmit(e) {
