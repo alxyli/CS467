@@ -41,51 +41,102 @@
 
   .container {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
   }
+
+  .container.rotate{
+    animation-name: clockwise_rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
   
-  .item {
-    width: 100px;
-    height: 100px;
+  .bar{
+    width: 4px;
     position: absolute;
   }
-  
-  .item-1 {
+
+  .bar.diag {
+    height: 30px;
+  }
+
+  .bar.main {
     background-color: #FA5667;
-    top: 0;
-    left: 0;
+    max-height: 100%;
+    height: 300em;
+    bottom: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .diag.left {
+    -moz-transform: rotate(270deg);  
+    -o-transform: rotate(270deg);  
+    -webkit-transform: rotate(270deg);  
+    -ms-transform: rotate(270deg);  
+    transform: rotate(270deg);  
+  }
+
+  .diag.right {
+    -moz-transform: rotate(45deg);  
+    -o-transform: rotate(45deg);  
+    -webkit-transform: rotate(45deg);  
+    -ms-transform: rotate(45deg);  
+    transform: rotate(45deg);  
+  }
+
+  .bar.nw {
+    background-color: #FA5667;
     z-index: 1;
-    animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+    animation: diag_scale 5s linear infinite;
   }
-  
-  .item-2 {
-    background-color: #7A45E5;
-    top: 0;
-    right: 0;
-    animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-  }
-  
-  .item-3 {
-    background-color: #1B91F7;
-    bottom: 0;
-    right: 0;
+
+  .bar.main.rotate{ 
+    transform: rotate(90deg);  
     z-index: 1;
-    animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+
+  .bar.north {
+    animation-name: main_scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   
-  .item-4 {
-    background-color: #FAC24C;
-    bottom: 0;
-    left: 0;
-    animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  @keyframes diag_scale {
+    0%, 100% {transform: scale(0)} 
+    25% {transform: scale(0, 1)}  
+    75% {transform: translate(1, 0)} 
   }
-  
+
+  @keyframes main_scale {
+    0%, 100% {transform: scaleY(0)} 
+    15% {transform: scaleY(1)} 
+    85% {transform: scaleY(1)} 
+  }
+
+  @keyframes clockwise_rotate {
+    0%, 100%{transform: rotate(0deg)} 
+    25% {transform: rotate(90deg)} 
+    50% {transform: rotate(180deg)} 
+    75% {transform: rotate(270deg)}
+    100%{transform: rotate(360deg)} 
+}
+
+  @keyframes nw_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, 100px)} 
+    50% {transform: translate(100px, 100px)} 
+    75% {transform: translate(100px, 0)} 
+  }
+
   @keyframes item-1_move {
     0%, 100% {transform: translate(0, 0)} 
     25% {transform: translate(0, 100px)} 

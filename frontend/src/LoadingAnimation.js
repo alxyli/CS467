@@ -9,11 +9,10 @@ export class LoadingAnimation extends React.Component {
 
   render() {
       return (
-        <div class="loading">
-          <div class="loading-bar"></div>
-          <div class="loading-bar"></div>
-          <div class="loading-bar"></div>
-          <div class="loading-bar"></div>
+        <div class="container rotate">
+          <div class="bar main north"></div>
+          <div class="bar diag right nw"></div>
+          <div class="bar main rotate"></div>
         </div>
       );
   }
