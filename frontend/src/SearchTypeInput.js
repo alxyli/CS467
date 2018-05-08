@@ -18,11 +18,11 @@ export class SearchTypeInput extends React.Component {
           Search Type:
         </label>
         <select id="search-types" name={this.props.name} onChange={this.handleChange}>
-          <option value="DFS">
+          <option value="dfs">
             Depth First Search
           </option>
 
-          <option value="BFS">
+          <option value="bfs">
             Breadth First Search
           </option>
         </select>

@@ -8,7 +8,7 @@ export class FormContainer extends React.Component {
     super(props);
     this.state = {
       website: '',
-      sType: 'DFS',
+      sType: 'dfs',
       sLimit: '',
       searchTerm: '',
       advancedOn: false,
@@ -51,6 +51,7 @@ export class FormContainer extends React.Component {
     return {
       url: this.state.website,
       depth: this.state.sLimit,
+      dfs: this.state.sType
     }
   }
 

@@ -8,7 +8,6 @@
     width: 4px;
     height: 18px;
     border-radius: 4px;
-    animation: loading 1s ease-in-out infinite;
   }
   .loading-bar:nth-child(1) {
     background-color: #3498db;
@@ -26,23 +25,11 @@
     background-color: #27ae60;
     animation-delay: .27s;
   }
-  
-  @keyframes loading {
-    0% {
-      transform: scale(1);
-    }
-    20% {
-      transform: scale(1, 2.2);
-    }
-    40% {
-      transform: scale(1);
-    }
-  }
 
   .container {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -54,80 +41,106 @@
     animation-name: clockwise_rotate;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+  }
+
+  .main_container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: main_rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
   }
   
   .bar{
+    max-height: 100%;
     width: 4px;
     position: absolute;
   }
 
+  .container .bar{
+    animation-duration: 6s;
+  }
+
   .bar.diag {
+    background-color: #FA5667;
     height: 30px;
+    left: 50%;
   }
 
   .bar.main {
     background-color: #FA5667;
-    max-height: 100%;
-    height: 300em;
+    height: 500em;
     bottom: 0px;
     top: 0px;
     left: 50%;
-    transform: translate(-50%, 0);
   }
   
-  .diag.left {
-    -moz-transform: rotate(270deg);  
-    -o-transform: rotate(270deg);  
-    -webkit-transform: rotate(270deg);  
-    -ms-transform: rotate(270deg);  
-    transform: rotate(270deg);  
+  .diag.sw { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
   }
 
-  .diag.right {
-    -moz-transform: rotate(45deg);  
-    -o-transform: rotate(45deg);  
-    -webkit-transform: rotate(45deg);  
-    -ms-transform: rotate(45deg);  
-    transform: rotate(45deg);  
+  .diag.se { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
   }
 
-  .bar.nw {
-    background-color: #FA5667;
-    z-index: 1;
-    animation: diag_scale 5s linear infinite;
+  .diag.nw { 
+    transform-origin: 50% 0%;
+  }
+
+  .diag.ne { 
+    transform-origin: 50% 0%;
+  }
+
+  .diag.ccw {
+    animation-name: diag_rot_ccw;
+    animation-iteration-count: infinite;
+  }
+
+  .diag.cw{
+    animation-name: diag_rot_cw;
+    animation-iteration-count: infinite;
   }
 
   .bar.main.rotate{ 
     transform: rotate(90deg);  
     z-index: 1;
   }
-
-  .bar.north {
-    animation-name: main_scale;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
   
-  @keyframes diag_scale {
-    0%, 100% {transform: scale(0)} 
-    25% {transform: scale(0, 1)}  
-    75% {transform: translate(1, 0)} 
+  @keyframes diag_rot_cw {
+    0%, 100% {transform: rotate(0deg)} 
+    20% {transform: rotate(0deg)}
+    25% {transform: rotate(45deg)}
+    75% {transform: rotate(45deg)}  
+    80% {transform: rotate(0deg)}
   }
 
-  @keyframes main_scale {
-    0%, 100% {transform: scaleY(0)} 
-    15% {transform: scaleY(1)} 
-    85% {transform: scaleY(1)} 
+  @keyframes diag_rot_ccw {
+    0%, 100% {transform: rotate(0deg)} 
+    20% {transform: rotate(0deg)}
+    25% {transform: rotate(-45deg)}  
+    75% {transform: rotate(-45deg)} 
+    80% {transform: rotate(0deg)}
   }
 
   @keyframes clockwise_rotate {
     0%, 100%{transform: rotate(0deg)} 
-    25% {transform: rotate(90deg)} 
-    50% {transform: rotate(180deg)} 
-    75% {transform: rotate(270deg)}
-    100%{transform: rotate(360deg)} 
+    20% {transform: rotate(90deg)} 
+    80% {transform: rotate(90deg)} 
+}
+
+  @keyframes main_rotate {
+    0% {transform: rotate(0deg)} 
+    35% {transform: rotate(0deg)} 
+    65% {transform: rotate(720deg)}
+    100% {transform: rotate(720deg)} 
 }
 
   @keyframes nw_move {
@@ -135,32 +148,4 @@
     25% {transform: translate(0, 100px)} 
     50% {transform: translate(100px, 100px)} 
     75% {transform: translate(100px, 0)} 
-  }
-
-  @keyframes item-1_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(0, 100px)} 
-    50% {transform: translate(100px, 100px)} 
-    75% {transform: translate(100px, 0)} 
-  }
-  
-  @keyframes item-2_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(-100px, 0)} 
-    50% {transform: translate(-100px, 100px)} 
-    75% {transform: translate(0, 100px)} 
-  }
-  
-  @keyframes item-3_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(0, -100px)} 
-    50% {transform: translate(-100px, -100px)} 
-    75% {transform: translate(-100px, 0)} 
-  }
-  
-  @keyframes item-4_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(100px, 0)} 
-    50% {transform: translate(100px, -100px)} 
-    75% {transform: translate(0, -100px)} 
   }

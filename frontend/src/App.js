@@ -19,16 +19,17 @@ class App extends Component {
     this.handleAPIRequest = this.handleAPIRequest.bind(this);
   }
 
+  // Takes care of talking with the server
   handleAPIRequest(dataIn) {
     this.setState({ isLoading: true, hasLoaded: false });
-    console.log(dataIn);
-    console.log(JSON.stringify(dataIn))
+        // Create the formdata Body
     fetch(API, {
-      body: JSON.stringify({
-        url: "https://www.google.com/",
-        depth: 1
-      }),
-      method: 'POST'
+      method: 'POST', 
+      mode: 'cors', 
+      body: JSON.stringify(dataIn),
+      headers: new Headers({
+        'Content-Type': 'application/json'
+        })
       })
       .then(response => {
         console.log(response);
@@ -57,6 +58,9 @@ class App extends Component {
       );
     }
 
+    // This will handle rendering the graph data
+    // TODO: Work on transition back to the input page from the 
+    // graph visualization
     if (hasLoaded){
       return (
         <div>
@@ -71,16 +75,9 @@ class App extends Component {
 
     return (
       <div>
-        <LoadingAnimation />
-      </div>
-
-    );
-
-    /*return (
-      <div>
         <FormContainer onQueryAPI={this.handleAPIRequest} />
       </div>
-    );*/
+    );
   }
 }
 
