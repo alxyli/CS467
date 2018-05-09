@@ -1,0 +1,86 @@
+  .container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .main_container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .bar{
+    max-height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+  }
+
+  .container .bar{
+    animation-duration: 6s;
+  }
+
+  .bar.diag {
+    background-color: #FA5667;
+    height: 2em;
+    margin-left: -2px;
+  }
+
+  .bar.main {
+    background-color: #FA5667;
+    height: 500em;
+    bottom: 0px;
+    top: 0px;
+    transform-origin: 50% 0%;
+    transform: translate(-50%, 0%);
+  }
+  
+  .diag.sw { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
+  }
+
+  .diag.se { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
+  }
+
+  .diag.nw { 
+    transform-origin: 50% 0%;
+  }
+
+  .diag.ne { 
+    transform-origin: 50% 0%;
+  }
+
+  .ccw {
+    transform: rotate(-45deg);
+  }
+
+  .cw{
+    transform: rotate(45deg);
+  }
+
+  .rotate_ccw{
+    transform: rotate(-60deg);
+  }
+  
+  .rotate_cw{
+    transform: rotate(60deg);
+  }
+
+  .bar.main.rotate{ 
+    transform: rotate(90deg);  
+    z-index: 1;
+  }

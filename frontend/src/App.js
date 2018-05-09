@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormContainer } from './FormContainer';
 import { LoadingAnimation } from './LoadingAnimation';
+import { InputPage } from './Input_Page';
 import './App.css';
 
 const API = 'http://52.39.153.11:5000/findurl';
@@ -50,18 +51,23 @@ class App extends Component {
       return <p>{error.message}</p>;
     }
 
-    if (isLoading) {
+    /*if (isLoading) {
       return (
         <div>
           <LoadingAnimation />
         </div>
       );
-    }
+    }*/
 
     // This will handle rendering the graph data
     // TODO: Work on transition back to the input page from the 
     // graph visualization
-    if (hasLoaded){
+    /*if (hasLoaded){
+      return (
+        <div>
+          <LoadingAnimation />
+        </div>
+      );
       return (
         <div>
           {graphData.map(gNode =>
@@ -71,11 +77,11 @@ class App extends Component {
           )}
         </div>
       );
-    }    
+    }  */  
 
     return (
       <div>
-        <FormContainer onQueryAPI={this.handleAPIRequest} />
+        <InputPage onQueryAPI={this.handleAPIRequest} />
       </div>
     );
   }
