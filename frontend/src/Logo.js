@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import styles from './Logo.css';
 
 export class Logo extends React.Component {
   constructor(props){
@@ -10,28 +10,27 @@ export class Logo extends React.Component {
       return (
         <div>
           <link rel="stylesheet" type="text/css" href={this.props.stylePath} />
-          <div class="main_container">
-            <div class="container">
-              <link rel="stylesheet" type="text/css" href={this.props.stylePath} />
-              <div class="bar main north"></div>
-              <div class="bar diag nw cw"></div>
-              <div class="bar diag ne ccw"></div>
-              <div class="bar diag sw ccw"></div>
-              <div class="bar diag se cw"></div>
+          <div className={styles.main_container}>
+            <div className={styles.container}>              
+              <div className={[styles.bar, styles.main, styles.north].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.nw, styles.cw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.ne, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.sw, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.se, styles.cw].join(' ')}></div>
             </div>
-            <div class="container rotate_cw">
-              <div class="bar main north"></div>
-              <div class="bar diag nw cw"></div>
-              <div class="bar diag ne ccw"></div>
-              <div class="bar diag sw ccw"></div>
-              <div class="bar diag se cw"></div>
+            <div className={[styles.container, styles.rotate_cw].join(' ')}>
+              <div className={[styles.bar, styles.main, styles.north].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.nw, styles.cw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.ne, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.sw, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.se, styles.cw].join(' ')}></div>
             </div>
-            <div class="container rotate_ccw">
-              <div class="bar main north"></div>
-              <div class="bar diag nw cw"></div>
-              <div class="bar diag ne ccw"></div>
-              <div class="bar diag sw ccw"></div>
-              <div class="bar diag se cw"></div>
+            <div className={[styles.container, styles.rotate_ccw].join(' ')}>
+              <div className={[styles.bar, styles.main, styles.north].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.nw, styles.cw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.ne, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.sw, styles.ccw].join(' ')}></div>
+              <div className={[styles.bar, styles.diag, styles.se, styles.cw].join(' ')}></div>
             </div>
           </div>
         </div>
