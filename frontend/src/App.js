@@ -5,7 +5,7 @@ import './App.css';
 import { GraphRenderer } from './GraphRenderer';
 import samplegraph1 from './Components/sample_graph.json';
 
-const API = 'http://52.39.153.11:5000/findurl';
+const API = 'http://52.39.153.11:5002/findurl';
 
 class App extends Component {
   constructor(props) {

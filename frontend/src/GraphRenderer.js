@@ -35,11 +35,23 @@ export class GraphRenderer extends React.Component {
 
 	buildSigmaNodes(graphData) {
     Object.entries(graphData).map(([key, value]) => {
+      let parentid = value.parentid;
+      let parentNode = "";
+
+      // first node, set parentNode to current id
+      if (parentid == 0) {
+        parentNode = value.id;
+      }
+
+      // otherwise set parent node to parent id
+      else {
+        parentNode = value.parentid;
+      }
 
       let tempNode = {
         id: "n" + value.id,
         label: value.url,
-        parent: "n" + value.parentid,
+        parent: "n" + parentNode,
         size: 7
       }
 
