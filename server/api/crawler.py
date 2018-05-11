@@ -111,18 +111,18 @@ def api_URLFIND():
             url = data['url']
             dfs = data['dfs']
             depth = int(data['depth'])
-            searchTerm = data['searchterm']
+            #searchTerm = data['searchTerm']
         else:
             url = request.form.get('url')
             dfs = request.form.get('dfs')
             depth = int(request.form.get('depth'))
-            searchTerm = request.form.get('searchterm')
+            searchTerm = request.form.get('searchTerm')
     else:
         url = "http://yahoo.com"
         dfs = "bfs"
         depth = 3    
-    setmaxdepth(depth)   
-    setsearchTerm(searchTerm)
+    setmaxdepth(depth)
+    #setsearchTerm(searchTerm)
     urlList = []
     initList(urlList,url)     
     if dfs:
@@ -200,11 +200,11 @@ def ReadURLOnPage(url,parentid,depth,URLList):
 @app.after_request
 def apply_caching(response):
     response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
     return response
 
 if __name__ == "__main__":
-    app.run(host= '0.0.0.0',port=5002) 
-    #app.run(host= '172.31.22.173',port=5002)
+   # app.run(host= '0.0.0.0',port=5002) 
+    app.run(host= '172.31.22.173',port=5002)
     
     

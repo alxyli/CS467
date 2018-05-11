@@ -1419,3 +1419,285 @@ UnboundLocalError: local variable 'searchTerm' referenced before assignment
 73.162.189.46 - - [10/May/2018 09:48:09] "GET / HTTP/1.1" 200 -
  * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
 104.185.157.36 - - [11/May/2018 04:00:34] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+[2018-05-11 04:57:12,235] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:57:12] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:29,853] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:29] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:30,912] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:30] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:31,617] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:31] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:32,161] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:32] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:32,512] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:32] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:32,730] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:32] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:32,959] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:32] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:33,159] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:33] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:33,462] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:33] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:33,691] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:33] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:33,927] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:33] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:34,209] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:34] "GET /findurl HTTP/1.1" 500 -
+[2018-05-11 04:58:35,882] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [11/May/2018 04:58:35] "GET /findurl HTTP/1.1" 500 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
