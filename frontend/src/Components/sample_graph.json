@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "https://en.wikipedia.org/wiki/Web_crawler",
+      "x": 1,
+      "y": 3,
+      "size": 3,
+      "color": "#f00"
+    },
+    {
+      "id": "n1",
+      "label": "https://en.wikipedia.org/wiki/Internet_bot",
+      "x": 2,
+      "y": 3,
+      "size": 3,
+      "color": "#f00"
+    },
+    {
+      "id": "n2",
+      "label": "https://en.wikipedia.org/wiki/Software_agent",
+      "x": 3,
+      "y": 3,
+      "size": 3,
+      "color": "#f00"
+    },
+    {
+      "id": "n3",
+      "label": "https://en.wikipedia.org/wiki/Computer_science",
+      "x": 4,
+      "y": 3,
+      "size": 3,
+      "color": "#f00"
+    },
+    {
+      "id": "n4",
+      "label": "https://en.wikipedia.org/wiki/Computation",
+      "x": 5,
+      "y": 3,
+      "size": 3,
+      "color": "#f00"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "color": "#000"
+
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "color": "#000"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "color": "#000"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "color": "#000"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "target": "",
+      "color": "#000"
+    }
+  ]
+}

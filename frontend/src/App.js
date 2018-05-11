@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FormContainer } from './FormContainer';
 import { LoadingAnimation } from './LoadingAnimation';
 import './App.css';
+import { GraphRenderer } from './GraphRenderer';
+import samplegraph1 from './Components/sample_graph.json';
 
 const API = 'http://52.39.153.11:5000/findurl';
 
@@ -42,7 +44,7 @@ class App extends Component {
       .then(data => this.setState({ graphData: data, isLoading: false, hasLoaded: true }))
       .catch(error => this.setState({ error, isLoading: false, hasLoaded: false }))
   }
-  
+
   render() {
     const { graphData, isLoading, hasLoaded, error } = this.state;
 
@@ -64,11 +66,15 @@ class App extends Component {
     if (hasLoaded){
       return (
         <div>
+          {/*
           {graphData.map(gNode =>
             <div key={gNode.id}>
               <a href={gNode.url}>{gNode.url}</a>
             </div>
           )}
+          */}
+          {console.log(graphData)}
+          <GraphRenderer graphData={graphData} />
         </div>
       );
     }    
