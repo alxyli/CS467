@@ -12,11 +12,9 @@ from flask import Flask, url_for
 from flask import request
 from flask import jsonify
 from flask_cors import CORS
- 
 from random import randint
 app = Flask(__name__)
 CORS(app)
-
 lastid = 0
 isDFS = False 
 searchTerm = "" 
@@ -124,8 +122,9 @@ def api_URLFIND():
         dfs = "bfs"
         depth = 3    
     setmaxdepth(depth)   
-    setsearchTerm(searchTerm)     
+    setsearchTerm(searchTerm)
     urlList = []
+    initList(urlList,url)     
     if dfs:
         setisDFS(True)
     if getisDFS():
@@ -136,6 +135,11 @@ def api_URLFIND():
         ReadURLOnPage(url,1,1,urlList)
         results = BFS_Search(urlList,1)         
     return jsonify(results)
+def initList(URLList,url):
+    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0}
+    setlastid(1)
+    URLList.append(urlrecord)
+    
 
 def BFS_Search(URLList,targetdepth):
     if (targetdepth==getmaxdepth()):
@@ -192,15 +196,15 @@ def ReadURLOnPage(url,parentid,depth,URLList):
             URLList.append(urlrecord)
         setlastid(url_id)
     return URLList
- 
+
 @app.after_request
 def apply_caching(response):
-    #response.headers.add('Access-Control-Allow-Origin', '*')
-    #response.headers.add('Access-Control-Allow-Headers', '*')
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', '*')
     return response
- 
+
 if __name__ == "__main__":
-   #app.run(host= '0.0.0.0',port=5002) 
-    app.run(host= '172.31.22.173',port=5000)
+    app.run(host= '0.0.0.0',port=5002) 
+    #app.run(host= '172.31.22.173',port=5002)
     
     

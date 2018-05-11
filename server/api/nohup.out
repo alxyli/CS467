@@ -1417,3 +1417,5 @@ Traceback (most recent call last):
 UnboundLocalError: local variable 'searchTerm' referenced before assignment
 73.162.189.46 - - [10/May/2018 09:48:06] "GET /findurl HTTP/1.1" 500 -
 73.162.189.46 - - [10/May/2018 09:48:09] "GET / HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [11/May/2018 04:00:34] "POST /findurl HTTP/1.1" 200 -
