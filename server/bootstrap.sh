@@ -1,4 +1,3 @@
 #!/bin/sh
-export FLASK_APP=./app.py
-source $(pipenv --venv)/bin/activate
+export FLASK_APP=./crawler.py
 nohup flask run --host=0.0.0.0

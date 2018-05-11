@@ -510,3 +510,910 @@ Traceback (most recent call last):
 socket.gaierror: [Errno -2] Name or service not known
  * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
 104.185.157.36 - - [03/May/2018 03:45:35] "POST /findurl HTTP/1.1" 200 -
+[2018-05-03 04:08:53,288] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:08:53] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:09:18,080] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:09:18] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:09:52,724] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:09:52] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:10:01,955] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:10:01] "POST /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [03/May/2018 04:10:24] "POST /findurl HTTP/1.1" 200 -
+[2018-05-03 04:11:06,507] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:11:06] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:11:25,224] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 87, in BuildList
+    URLList = ReadURLOnPage(url.get('url',None),URLList,depth-1)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:11:25] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:11:36,472] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:11:36] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:11:39,706] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:11:39] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:12:52,229] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 87, in BuildList
+    URLList = ReadURLOnPage(url.get('url',None),URLList,depth-1)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:12:52] "POST /findurl HTTP/1.1" 500 -
+[2018-05-03 04:28:43,930] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 73, in api_hello
+    results = BuildList(myurl,links,2)
+  File "crawler.py", line 84, in BuildList
+    URLList = ReadURLOnPage(URL,URLList,depth)
+  File "crawler.py", line 93, in ReadURLOnPage
+    html = BeautifulSoup(raw_html, 'html.parser')
+  File "/usr/lib/python3/dist-packages/bs4/__init__.py", line 176, in __init__
+    elif len(markup) <= 256:
+TypeError: object of type 'NoneType' has no len()
+73.162.189.46 - - [03/May/2018 04:28:43] "POST /findurl HTTP/1.1" 500 -
+65.204.229.65 - - [03/May/2018 19:56:44] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [03/May/2018 22:55:59] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [04/May/2018 03:43:08] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+65.204.229.65 - - [04/May/2018 17:32:31] "POST /findurl HTTP/1.1" 200 -
+65.204.229.65 - - [04/May/2018 17:32:49] "POST /findurl HTTP/1.1" 200 -
+68.100.155.109 - - [04/May/2018 22:51:21] "POST /findurl HTTP/1.1" 200 -
+[2018-05-04 23:34:07,076] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 83, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [04/May/2018 23:34:07] "POST /findurl HTTP/1.1" 500 -
+[2018-05-04 23:34:16,069] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 83, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [04/May/2018 23:34:16] "POST /findurl HTTP/1.1" 500 -
+[2018-05-04 23:34:30,430] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 83, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [04/May/2018 23:34:30] "POST /findurl HTTP/1.1" 500 -
+68.100.155.109 - - [04/May/2018 23:39:51] "POST /findurl HTTP/1.1" 200 -
+68.100.155.109 - - [04/May/2018 23:40:40] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:42:34] "POST /findurl HTTP/1.1" 200 -
+68.100.155.109 - - [04/May/2018 23:42:44] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:43:01] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:54:25] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:55:24] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:55:24] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:55:47] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [04/May/2018 23:55:52] "POST /findurl HTTP/1.1" 200 -
+[2018-05-04 23:56:10,383] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 83, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [04/May/2018 23:56:10] "POST /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [04/May/2018 23:56:36] "GET /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:07] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:12] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:18] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:20] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:23] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:25] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:27] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:29] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:02:31] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:18] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:43] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:44] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:45] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:46] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:46] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:47] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:48] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:48] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:49] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:05:51] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 00:15:22] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 00:15:32] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:17:13] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:18:38] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 00:18:42] "POST /findurl HTTP/1.1" 200 -
+68.100.155.109 - - [05/May/2018 00:43:36] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:11:16] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:11:21] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:11:37] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:11:42] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:17:04] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [05/May/2018 02:42:40] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:43:15] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 02:45:33] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+[2018-05-05 05:59:33,995] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 100, in api_URLFIND
+    ReadURLOnPage(url,1,1,urlList)
+  File "crawler.py", line 126, in ReadURLOnPage
+    id = getlastid()
+  File "crawler.py", line 27, in getlastid
+    return  lastid
+NameError: name 'lastid' is not defined
+104.185.157.36 - - [05/May/2018 05:59:33] "POST /findurl HTTP/1.1" 500 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+[2018-05-05 06:01:10,972] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 100, in api_URLFIND
+    ReadURLOnPage(url,1,1,urlList)
+  File "crawler.py", line 126, in ReadURLOnPage
+    id = getlastid()
+  File "crawler.py", line 27, in getlastid
+    return  lastid
+NameError: name 'lastid' is not defined
+104.185.157.36 - - [05/May/2018 06:01:10] "POST /findurl HTTP/1.1" 500 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [05/May/2018 06:16:59] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [05/May/2018 09:20:59] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:13] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:15] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:17] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:18] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:19] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:45:22] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:47:06] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:47:08] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:47:13] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:47:20] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:49:02] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:49:05] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [05/May/2018 12:49:07] "POST /findurl HTTP/1.1" 200 -
+169.54.244.78 - - [05/May/2018 15:17:45] "GET / HTTP/1.1" 200 -
+173.72.195.102 - - [05/May/2018 18:04:15] "POST /findurl HTTP/1.1" 200 -
+173.72.195.102 - - [05/May/2018 18:05:24] "OPTIONS /findurl HTTP/1.1" 200 -
+[2018-05-05 18:19:33,893] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 90, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+173.72.195.102 - - [05/May/2018 18:19:33] "POST /findurl HTTP/1.1" 500 -
+[2018-05-05 18:22:37,665] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 90, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+173.72.195.102 - - [05/May/2018 18:22:37] "POST /findurl HTTP/1.1" 500 -
+  File "crawler.py", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+173.72.195.102 - - [05/May/2018 18:25:47] "POST /findurl HTTP/1.1" 200 -
+[2018-05-05 18:26:22,203] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 90, in api_URLFIND
+    if request.method == 'POST':
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+173.72.195.102 - - [05/May/2018 18:26:22] "POST /findurl HTTP/1.1" 500 -
+[2018-05-05 18:27:20,328] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 90, in api_URLFIND
+    if request.method == 'POST':
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+173.72.195.102 - - [05/May/2018 18:27:20] "POST /findurl HTTP/1.1" 500 -
+173.72.195.102 - - [05/May/2018 18:27:50] "GET /findurl HTTP/1.1" 200 -
+173.72.195.102 - - [05/May/2018 18:27:51] "GET /favicon.ico HTTP/1.1" 404 -
+173.72.195.102 - - [05/May/2018 18:28:48] "POST /findurl HTTP/1.1" 200 -
+173.72.195.102 - - [05/May/2018 18:31:58] "POST /findurl HTTP/1.1" 200 -
+  File "crawler.py", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+  File "crawler.py", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+173.72.195.102 - - [05/May/2018 18:45:15] "GET /findurl HTTP/1.1" 200 -
+  File "crawler.py", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [08/May/2018 03:16:56] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:23:12] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:23:19] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:23:29] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:25:59] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:26:01] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [08/May/2018 03:32:52] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:33:13] "POST /findurl HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "crawler.py", line 170, in <module>
+    app.run(host= '172.31.22.173',port=5002)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 814, in run_simple
+    inner()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 774, in inner
+    fd=fd)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 666, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 577, in __init__
+    self.address_family), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+104.185.157.36 - - [08/May/2018 03:39:15] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:40:00] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 03:43:03] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [08/May/2018 22:44:30] "POST /findurl HTTP/1.1" 200 -
+[2018-05-08 22:53:47,006] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:53:47] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 22:54:25,673] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:54:25] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 22:54:37,971] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:54:37] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 22:54:40,119] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:54:40] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 22:55:15,659] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:55:15] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 22:55:24,348] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 22:55:24] "POST /findurl HTTP/1.1" 500 -
+[2018-05-08 23:13:18,343] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [08/May/2018 23:13:18] "POST /findurl HTTP/1.1" 500 -
+[2018-05-09 00:47:40,248] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [09/May/2018 00:47:40] "POST /findurl HTTP/1.1" 500 -
+[2018-05-09 00:47:45,119] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 102, in api_URLFIND
+    depth = int(request.form.get('depth'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+73.162.189.46 - - [09/May/2018 00:47:45] "POST /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [09/May/2018 00:48:12] "GET /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [09/May/2018 05:25:51] "GET /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [09/May/2018 05:25:51] "GET / HTTP/1.1" 200 -
+73.162.189.46 - - [09/May/2018 05:25:51] "GET /favicon.ico HTTP/1.1" 404 -
+73.162.189.46 - - [09/May/2018 05:25:51] "GET /favicon.ico HTTP/1.1" 404 -
+73.162.189.46 - - [09/May/2018 05:26:18] "GET /findurl HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [09/May/2018 12:09:02] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [10/May/2018 03:22:22] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [10/May/2018 03:25:40] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [10/May/2018 03:25:41] "POST /findurl HTTP/1.1" 200 -
+[2018-05-10 03:25:42,189] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 131, in api_URLFIND
+    urlRecord = ReadURLOnPage(url,1,1,urlList)
+  File "crawler.py", line 169, in ReadURLOnPage
+    searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
+  File "/usr/lib/python3.5/re.py", line 224, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.5/re.py", line 292, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+104.185.157.36 - - [10/May/2018 03:25:42] "POST /findurl HTTP/1.1" 500 -
+[2018-05-10 03:25:56,992] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 131, in api_URLFIND
+    urlRecord = ReadURLOnPage(url,1,1,urlList)
+  File "crawler.py", line 169, in ReadURLOnPage
+    searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
+  File "/usr/lib/python3.5/re.py", line 224, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.5/re.py", line 292, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+104.185.157.36 - - [10/May/2018 03:25:56] "POST /findurl HTTP/1.1" 500 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+[2018-05-10 03:26:44,027] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 131, in api_URLFIND
+    urlRecord = ReadURLOnPage(url,1,1,urlList)
+  File "crawler.py", line 169, in ReadURLOnPage
+    searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
+  File "/usr/lib/python3.5/re.py", line 224, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.5/re.py", line 292, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+104.185.157.36 - - [10/May/2018 03:26:44] "POST /findurl HTTP/1.1" 500 -
+ * Running on http://0.0.0.0:5002/ (Press CTRL+C to quit)
+104.185.157.36 - - [10/May/2018 03:53:07] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [10/May/2018 09:33:06] "POST /findurl HTTP/1.1" 400 -
+[2018-05-10 09:47:50,095] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    depth = 3
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [10/May/2018 09:47:50] "GET /findurl HTTP/1.1" 500 -
+[2018-05-10 09:47:51,210] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    depth = 3
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [10/May/2018 09:47:51] "GET /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [10/May/2018 09:47:55] "POST /findurl HTTP/1.1" 400 -
+73.162.189.46 - - [10/May/2018 09:48:04] "POST /findurl HTTP/1.1" 400 -
+[2018-05-10 09:48:06,263] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    depth = 3
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [10/May/2018 09:48:06] "GET /findurl HTTP/1.1" 500 -
+[2018-05-10 09:48:06,745] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    depth = 3
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [10/May/2018 09:48:06] "GET /findurl HTTP/1.1" 500 -
+[2018-05-10 09:48:06,945] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 125, in api_URLFIND
+    depth = 3
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [10/May/2018 09:48:06] "GET /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [10/May/2018 09:48:09] "GET / HTTP/1.1" 200 -
