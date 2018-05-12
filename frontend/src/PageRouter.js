@@ -4,7 +4,7 @@ import { GraphRenderer } from './GraphRenderer.js';
 import { InputPage } from './Input_Page';
 import styles from './PageRouter.css';
 
-const API = 'http://52.39.153.11:5000/findurl';
+const API = 'http://52.39.153.11:5002/findurl';
 
 export class PageRouter extends Component {
   constructor(props) {
