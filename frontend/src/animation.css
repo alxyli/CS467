@@ -1,0 +1,165 @@
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .loading-bar {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    border-radius: 4px;
+  }
+  .loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+  }
+  .loading-bar:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+  }
+  .loading-bar:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+  }
+  .loading-bar:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+  }
+
+  .container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .container.rotate_cw{
+    animation-name: cw_rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  .container.rotate_ccw{
+    animation-name: ccw_rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  .main_container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: main_rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .bar{
+    max-height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+  }
+
+  .container .bar{
+    animation-duration: 6s;
+  }
+
+  .bar.diag {
+    background-color: #FA5667;
+    height: 2em;
+    margin-left: -2px;
+  }
+
+  .bar.main {
+    background-color: #FA5667;
+    height: 500em;
+    bottom: 0px;
+    top: 0px;
+    transform-origin: 50% 0%;
+    transform: translate(-50%, 0%);
+  }
+  
+  .diag.sw { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
+  }
+
+  .diag.se { 
+    transform-origin: 50% 100%;
+    bottom: 0%;
+  }
+
+  .diag.nw { 
+    transform-origin: 50% 0%;
+  }
+
+  .diag.ne { 
+    transform-origin: 50% 0%;
+  }
+
+  .diag.ccw {
+    animation-name: diag_rot_ccw;
+    animation-iteration-count: infinite;
+  }
+
+  .diag.cw{
+    animation-name: diag_rot_cw;
+    animation-iteration-count: infinite;
+  }
+
+  .bar.main.rotate{ 
+    transform: rotate(90deg);  
+    z-index: 1;
+  }
+  
+  @keyframes diag_rot_cw {
+    0%, 100% {transform: rotate(0deg)} 
+    20% {transform: rotate(0deg)}
+    25% {transform: rotate(45deg)}
+    75% {transform: rotate(45deg)}  
+    80% {transform: rotate(0deg)}
+  }
+
+  @keyframes diag_rot_ccw {
+    0%, 100% {transform: rotate(0deg)} 
+    20% {transform: rotate(0deg)}
+    25% {transform: rotate(-45deg)}  
+    75% {transform: rotate(-45deg)} 
+    80% {transform: rotate(0deg)}
+  }
+
+  @keyframes cw_rotate {
+    0%, 100%{transform: rotate(0deg)} 
+    20% {transform: rotate(60deg)} 
+    80% {transform: rotate(60deg)} 
+}
+
+@keyframes ccw_rotate {
+  0%, 100%{transform: rotate(0deg)} 
+  20% {transform: rotate(-60deg)} 
+  80% {transform: rotate(-60deg)} 
+}
+
+  @keyframes main_rotate {
+    0% {transform: rotate(0deg)} 
+    35% {transform: rotate(0deg)} 
+    65% {transform: rotate(720deg)}
+    100% {transform: rotate(720deg)} 
+}
+
+  @keyframes nw_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, 100px)} 
+    50% {transform: translate(100px, 100px)} 
+    75% {transform: translate(100px, 0)} 
+  }

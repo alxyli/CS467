@@ -84,8 +84,11 @@ def log_error(e):
 def api_URLFIND():
  
     if request.method == 'POST':
+<<<<<<< HEAD
         print(sys.path)
         print("We Got Here Atleast")
+=======
+>>>>>>> frontend
         data = request.get_json()
         if data is not None:
             print("Request is a JSON")
