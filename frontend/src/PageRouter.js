@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FormContainer } from './FormContainer';
 import { LoadingAnimation } from './LoadingAnimation';
+import { GraphRenderer } from './GraphRenderer.js';
 import { InputPage } from './Input_Page';
 import styles from './PageRouter.css';
 
@@ -65,16 +65,7 @@ export class PageRouter extends Component {
     if (hasLoaded){
       return (
         <div>
-          <LoadingAnimation />
-        </div>
-      );
-      return (
-        <div>
-          {graphData.map(gNode =>
-            <div key={gNode.id}>
-              <a href={gNode.url}>{gNode.url}</a>
-            </div>
-          )}
+          <GraphRenderer graphData={graphData} />
         </div>
       );
     }    

@@ -1,13 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Logo } from './Logo';
 import styles from './animation.css';
 
 export class LoadingAnimation extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return (
       <div>

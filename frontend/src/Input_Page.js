@@ -4,10 +4,6 @@ import { FormContainer } from './FormContainer';
 import { Logo } from './Logo';
 
 export class InputPage extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   render() {
       return (
         <div>
