@@ -25,7 +25,10 @@ def api_root():
 
 def setisDFS(value):
     global isDFS
-    isDFS = value
+    if value == "dfs":
+        isDFS = True
+    else:
+        isDFS = False
 
 def getisDFS():
     global isDFS
@@ -125,10 +128,9 @@ def api_URLFIND():
     #setsearchTerm(searchTerm)
     urlList = []
     initList(urlList,url)     
-    if dfs == "dfs":
-        setisDFS(True)
+    
+    setisDFS(dfs)
     if getisDFS():
-        setisDFS(True)
         urlRecord = ReadURLOnPage(url,1,1,urlList)
         results = DFS_Search(urlRecord,1,urlList)
     else:
@@ -204,9 +206,9 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
-    #app.run(host= '0.0.0.0',port=5002) 
+    app.run(host= '0.0.0.0',port=5002) 
     #app.run(host= '127.0.0.1',port=5002) 
     #http://127.0.0.1:5002
-     app.run(host= '172.31.22.173',port=5002)
+     #app.run(host= '172.31.22.173',port=5002)
     
     
