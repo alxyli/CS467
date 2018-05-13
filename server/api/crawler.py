@@ -38,7 +38,8 @@ def getisDFS():
  
 def setsearchTerm(value):
     global searchTerm
-    searchTerm = value
+    if isinstance(value, str):
+        searchTerm = value
 
 def getsearchTerm():
     global searchTerm
@@ -116,18 +117,18 @@ def api_URLFIND():
             url = data['url']
             dfs = data['dfs']
             depth = int(data['depth'])
-            #searchTerm = data['searchTerm']
+            searchTerm = data['searchterm']
         else:
             url = request.form.get('url')
             dfs = request.form.get('dfs')
             depth = int(request.form.get('depth'))
-            #searchTerm = request.form.get('searchTerm')
+            searchTerm = request.form.get('searchterm')
     else:
         url = "http://yahoo.com"
         dfs = "bfs"
         depth = 3    
     setmaxdepth(depth)
-    #setsearchTerm(searchTerm)
+    setsearchTerm(searchTerm)
     urlList = []
     initList(urlList,url)     
     
@@ -165,6 +166,14 @@ def DFS_Search(urlRecord,targetdepth,URLList):
         return URLList #ended up in a dead-end, bail out for now
     DFS_Search(urlResult,targetdepth+1,URLList)
     return URLList
+def searchThisPageForSearchWord(html,webpage):
+    found = 0
+    if (len(getsearchTerm()) > 0):
+        searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
+        searchLen = len(searchResults)
+        if searchLen > 0:
+            found = 1   
+    return found
 
 def ReadURLOnPage(url,parentid,depth,URLList):
     if url is None:
@@ -176,17 +185,14 @@ def ReadURLOnPage(url,parentid,depth,URLList):
  #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/ 
     url_id = getlastid()
     htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://")})
-    #FIXME searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
-    #FIXME searchLen = len(searchResults)
-    found = 0   
-    #if searchLen > 0:
-     #   found = 1
+
     if getisDFS():
         resultLen = len(htmlSearch)
         if (resultLen > 0):
             randURLID = randint(0, resultLen-1)
             htmlSearch = htmlSearch[randURLID]
             foundurl = htmlSearch.get('href')
+            found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found}
             URLList.append(urlrecord)
@@ -195,6 +201,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
     else:
         for link in  htmlSearch:#html.findAll('a', attrs={'href': re.compile("^http://")}):
             foundurl = link.get('href')
+            found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found}
             URLList.append(urlrecord)
