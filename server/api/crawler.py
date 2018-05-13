@@ -116,7 +116,7 @@ def api_URLFIND():
             url = request.form.get('url')
             dfs = request.form.get('dfs')
             depth = int(request.form.get('depth'))
-            searchTerm = request.form.get('searchTerm')
+            #searchTerm = request.form.get('searchTerm')
     else:
         url = "http://yahoo.com"
         dfs = "bfs"
@@ -125,7 +125,7 @@ def api_URLFIND():
     #setsearchTerm(searchTerm)
     urlList = []
     initList(urlList,url)     
-    if dfs:
+    if dfs == "dfs":
         setisDFS(True)
     if getisDFS():
         setisDFS(True)
@@ -204,7 +204,9 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
-   # app.run(host= '0.0.0.0',port=5002) 
-    app.run(host= '172.31.22.173',port=5002)
+    #app.run(host= '0.0.0.0',port=5002) 
+    #app.run(host= '127.0.0.1',port=5002) 
+    #http://127.0.0.1:5002
+     app.run(host= '172.31.22.173',port=5002)
     
     
