@@ -13,6 +13,8 @@ from flask import request
 from flask import jsonify
 from flask_cors import CORS
 from random import randint
+from sys import platform
+
 app = Flask(__name__)
 CORS(app)
 lastid = 0
@@ -209,6 +211,9 @@ if __name__ == "__main__":
     #app.run(host= '0.0.0.0',port=5002) 
     #app.run(host= '127.0.0.1',port=5002) 
     #http://127.0.0.1:5002
-     app.run(host= '172.31.22.173',port=5002)
-    
+    if platform == "linux" or platform == "linux2":
+        app.run(host= '172.31.22.173',port=5002)
+    else:
+        app.run(host= '127.0.0.1',port=5002) 
+        
     
