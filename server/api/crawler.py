@@ -206,9 +206,9 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
-    app.run(host= '0.0.0.0',port=5002) 
+    #app.run(host= '0.0.0.0',port=5002) 
     #app.run(host= '127.0.0.1',port=5002) 
     #http://127.0.0.1:5002
-     #app.run(host= '172.31.22.173',port=5002)
+     app.run(host= '172.31.22.173',port=5002)
     
     
