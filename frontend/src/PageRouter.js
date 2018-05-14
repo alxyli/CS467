@@ -65,6 +65,7 @@ export class PageRouter extends Component {
     if (hasLoaded){
       return (
         <div>
+          {console.log(graphData)}
           <GraphRenderer graphData={graphData} />
         </div>
       );
