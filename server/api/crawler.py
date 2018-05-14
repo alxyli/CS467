@@ -13,6 +13,8 @@ from flask import request
 from flask import jsonify
 from flask_cors import CORS
 from random import randint
+from sys import platform
+
 app = Flask(__name__)
 CORS(app)
 lastid = 0
@@ -25,7 +27,10 @@ def api_root():
 
 def setisDFS(value):
     global isDFS
-    isDFS = value
+    if value == "dfs":
+        isDFS = True
+    else:
+        isDFS = False
 
 def getisDFS():
     global isDFS
@@ -33,7 +38,8 @@ def getisDFS():
  
 def setsearchTerm(value):
     global searchTerm
-    searchTerm = value
+    if isinstance(value, str):
+        searchTerm = value
 
 def getsearchTerm():
     global searchTerm
@@ -108,27 +114,38 @@ def api_URLFIND():
     if request.method == 'POST':
         data = request.get_json()
         if data is not None:
-            url = data['url']
-            dfs = data['dfs']
-            depth = int(data['depth'])
-            #searchTerm = data['searchTerm']
+            if 'url' in data:
+                url = data['url']
+            else:
+                url = "http://www.yahoo.com/"
+            if 'dfs' in data:
+                dfs = data['dfs']
+            else:
+                dfs = "bfs"
+            if 'depth' in data:
+                depth = int(data['depth'])
+            else:
+                depth = 3
+            if 'searchterm' in data:
+                searchTerm = data['searchterm']
+            else:
+                searchTerm = ""    
         else:
             url = request.form.get('url')
             dfs = request.form.get('dfs')
             depth = int(request.form.get('depth'))
-            searchTerm = request.form.get('searchTerm')
+            searchTerm = request.form.get('searchterm')
     else:
         url = "http://yahoo.com"
         dfs = "bfs"
         depth = 3    
     setmaxdepth(depth)
-    #setsearchTerm(searchTerm)
+    setsearchTerm(searchTerm)
     urlList = []
     initList(urlList,url)     
-    if dfs:
-        setisDFS(True)
+    
+    setisDFS(dfs)
     if getisDFS():
-        setisDFS(True)
         urlRecord = ReadURLOnPage(url,1,1,urlList)
         results = DFS_Search(urlRecord,1,urlList)
     else:
@@ -161,6 +178,14 @@ def DFS_Search(urlRecord,targetdepth,URLList):
         return URLList #ended up in a dead-end, bail out for now
     DFS_Search(urlResult,targetdepth+1,URLList)
     return URLList
+def searchThisPageForSearchWord(html,webpage):
+    found = 0
+    if (len(getsearchTerm()) > 0):
+        searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
+        searchLen = len(searchResults)
+        if searchLen > 0:
+            found = 1   
+    return found
 
 def ReadURLOnPage(url,parentid,depth,URLList):
     if url is None:
@@ -172,17 +197,14 @@ def ReadURLOnPage(url,parentid,depth,URLList):
  #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/ 
     url_id = getlastid()
     htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://")})
-    #FIXME searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
-    #FIXME searchLen = len(searchResults)
-    found = 0   
-    #if searchLen > 0:
-     #   found = 1
+
     if getisDFS():
         resultLen = len(htmlSearch)
         if (resultLen > 0):
             randURLID = randint(0, resultLen-1)
             htmlSearch = htmlSearch[randURLID]
             foundurl = htmlSearch.get('href')
+            found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found}
             URLList.append(urlrecord)
@@ -191,6 +213,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
     else:
         for link in  htmlSearch:#html.findAll('a', attrs={'href': re.compile("^http://")}):
             foundurl = link.get('href')
+            found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found}
             URLList.append(urlrecord)
@@ -204,7 +227,12 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
-   # app.run(host= '0.0.0.0',port=5002) 
-    app.run(host= '172.31.22.173',port=5002)
-    
+    #app.run(host= '0.0.0.0',port=5002) 
+    #app.run(host= '127.0.0.1',port=5002) 
+    #http://127.0.0.1:5002
+    if platform == "linux" or platform == "linux2":
+        app.run(host= '172.31.22.173',port=5002)
+    else:
+        app.run(host= '127.0.0.1',port=5002) 
+        
     
