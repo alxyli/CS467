@@ -114,10 +114,22 @@ def api_URLFIND():
     if request.method == 'POST':
         data = request.get_json()
         if data is not None:
-            url = data['url']
-            dfs = data['dfs']
-            depth = int(data['depth'])
-            searchTerm = data['searchterm']
+            if 'url' in data:
+                url = data['url']
+            else:
+                url = "http://www.yahoo.com/"
+            if 'dfs' in data:
+                dfs = data['dfs']
+            else:
+                dfs = "bfs"
+            if 'depth' in data:
+                depth = int(data['depth'])
+            else:
+                depth = 3
+            if 'searchterm' in data:
+                searchTerm = data['searchterm']
+            else:
+                searchTerm = ""    
         else:
             url = request.form.get('url')
             dfs = request.form.get('dfs')
