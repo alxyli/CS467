@@ -88,9 +88,8 @@ choosePort(HOST, DEFAULT_PORT)
       if (isInteractive) {
         clearConsole();
       }
-      console.log(chalk.cyan('Starting the development server...\n' + port + HOST));
-      console.log(port);
-      console.log(HOST);
+      console.log(chalk.cyan('Starting the development server...\n'));
+      console.log("Port: " + port);
       openBrowser(urls.localUrlForBrowser);
     });
 
