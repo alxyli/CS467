@@ -75,6 +75,7 @@ export class PageRouter extends Component {
     if (hasLoaded){
       return (
         <div>
+          {console.log(graphData)}
           <button onClick={this.backToInput} type="button" >Back</button>
           <GraphRenderer graphData={graphData} />
         </div>
