@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { FormContainer } from './FormContainer';
 import { Logo } from './Logo';
 
+
 export class InputPage extends React.Component {
   render() {
       return (
@@ -18,7 +19,7 @@ export class InputPage extends React.Component {
   }
 }
 
-FormContainer.propTypes = {
+InputPage.propTypes = {
   onQueryAPI: PropTypes.func.isRequired
 };
 

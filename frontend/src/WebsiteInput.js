@@ -31,7 +31,9 @@ export class TextInput extends React.Component {
 TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  //prevSearchTerms: PropTypes.array.isRequired,
+  //prevStartPages: PropTypes.array.isRequired
 };
 
 export class NumberListInput extends React.Component {
