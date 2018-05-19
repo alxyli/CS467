@@ -24,6 +24,7 @@ export class FormContainer extends Component {
     this.verifyInput = this.verifyInput.bind(this);
     this.createQueryData = this.createQueryData.bind(this);
     this.addToCookie = this.addToCookie.bind(this);
+    this.handleChangeText = this.handleChangeText.bind(this);
   }
 
   componentWillMount() {
@@ -55,6 +56,12 @@ export class FormContainer extends Component {
     this.setState({
        [e.target.name]: e.target.value 
       });
+  }
+
+  handleChangeText(name, value){
+    this.setState({
+      [name]: value 
+     });
   }
 
   verifyInput(){
@@ -112,13 +119,13 @@ export class FormContainer extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <TextInput value={this.state.value} name="website" onChange={this.handleChange} 
-          label="Website:" isActive={true} prevStartPages = {this.state.prevStartPages} 
-          prevSearchTerms = {this.state.prevSearchTerms} />   
+        <TextInput value={this.state.website} name="website" onChange={this.handleChangeText} 
+          label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} />   
         <SearchTypeInput name="sType" onChange={this.handleChange}/>
         <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"/>
-        <TextInput value={this.state.value} name="searchTerm" onChange={this.handleChange} 
-          label="Search Term:" isActive={this.state.advancedOn} />   
+        <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
+          label="Search Term:" isActive={this.state.advancedOn} 
+          prevSearchTerms = {this.state.prevSearchTerms} />   
         <div>
           <input type="checkbox" onChange={this.toggleAdvancedOptions}/>
           <label>Advanced Options</label>
