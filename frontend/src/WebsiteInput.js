@@ -31,7 +31,9 @@ export class TextInput extends React.Component {
     if(this.props.isActive){
       return (
         <div>
+          <div>
           {this.props.label}
+          </div>
           <Autocomplete
           getItemValue={(item) => item.label}
           items={this.state.inputOptions}

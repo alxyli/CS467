@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { PageRouter } from './PageRouter';
-import styles from './App.css';
+import styles from './css/App.css';
 
 export class App extends Component {
   

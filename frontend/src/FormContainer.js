@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { SearchTypeInput } from './SearchTypeInput';
 import { TextInput, NumberListInput } from './WebsiteInput';
 import PropTypes from 'prop-types';
-import { instanceOf } from 'prop-types';
 import cookie from 'react-cookies'
 
 export class FormContainer extends Component {
