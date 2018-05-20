@@ -196,7 +196,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
     html = BeautifulSoup(raw_html, 'html.parser')
  #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/ 
     url_id = getlastid()
-    htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://")})
+    htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://|^https://")})
 
     if getisDFS():
         resultLen = len(htmlSearch)
@@ -227,12 +227,9 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
-    #app.run(host= '0.0.0.0',port=5002) 
-    #app.run(host= '127.0.0.1',port=5002) 
-    #http://127.0.0.1:5002
     if platform == "linux" or platform == "linux2":
-        app.run(host= '172.31.22.173',port=5002)
+        app.run(host= '172.31.22.173',port=5006)
     else:
-        app.run(host= '127.0.0.1',port=5002) 
+        app.run(host= '127.0.0.1',port=5006) 
         
     
