@@ -3,6 +3,7 @@ import { SearchTypeInput } from './SearchTypeInput';
 import { TextInput, NumberListInput } from './WebsiteInput';
 import PropTypes from 'prop-types';
 import cookie from 'react-cookies'
+import styles from './css/Form.css';
 
 export class FormContainer extends Component {
   constructor(props) {
@@ -117,22 +118,31 @@ export class FormContainer extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <TextInput value={this.state.website} name="website" onChange={this.handleChangeText} 
-          label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} />   
-        <SearchTypeInput name="sType" onChange={this.handleChange}/>
-        <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"/>
-        <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
-          label="Search Term:" isActive={this.state.advancedOn} 
-          prevSearchTerms = {this.state.prevSearchTerms} />   
-        <div>
-          <input type="checkbox" onChange={this.toggleAdvancedOptions}/>
-          <label>Advanced Options</label>
+      <div className={styles.container}>
+        <div className={styles.frame}>
+          <div className={styles.nav}>
+            <ul className={styles.links}>
+              <li className={styles.signinActive}><a className={styles.btn}>Crawl Input</a></li>
+            </ul>
+          </div>
+          <form onSubmit={this.handleSubmit} class={styles.formSignin}>
+            <TextInput value={this.state.website} name="website" onChange={this.handleChangeText} 
+              label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} />   
+            <SearchTypeInput name="sType" onChange={this.handleChange}/>
+            <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"/>
+            <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
+              label="Search Term:" isActive={this.state.advancedOn} 
+              prevSearchTerms = {this.state.prevSearchTerms} />   
+            <div>
+              <input type="checkbox" id="checkbox" onChange={this.toggleAdvancedOptions} />
+              <label for="checkbox" ><span class={styles.ui}></span>Advanced Options</label>
+            </div>
+            <div className={styles.btnAnimate}>
+              <input className={styles.btnSignin} type="submit" value="Submit" />
+            </div>
+          </form>
         </div>
-        <div>
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
+      </div>
     );
   }
 }

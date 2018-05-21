@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './css/Form.css';
 
 export class SearchTypeInput extends React.Component {
   constructor(props){
@@ -17,7 +18,7 @@ export class SearchTypeInput extends React.Component {
         <label>
           Search Type:
         </label>
-        <select id="search-types" name={this.props.name} onChange={this.handleChange}>
+        <select id="search-types" name={this.props.name} onChange={this.handleChange} className={styles.formStyling}>
           <option value="dfs">
             Depth First Search
           </option>

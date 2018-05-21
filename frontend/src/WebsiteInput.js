@@ -1,6 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Autocomplete from 'react-autocomplete';
+import styles from './css/Form.css';
+
+const formStyle = {
+  width: '100%',
+  height: '35px',
+  'padding-left': '15px',
+  border: 'none',
+  'border-radius': '20px',
+  'margin-bottom': '2px',
+  background: 'rgba(255,255,255,.2)'
+};
+
+const wrapperStyle = {
+  width: '100%'
+};
 
 
 export class TextInput extends React.Component {
@@ -12,7 +27,7 @@ export class TextInput extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
   }
-  
+
   handleChange(e) {
     this.setState({ value: e.target.value })
     this.props.onChange(this.props.name, e.target.value);
@@ -28,12 +43,13 @@ export class TextInput extends React.Component {
   }
 
   render() {
+
     if(this.props.isActive){
       return (
         <div>
-          <div>
+          <label>
           {this.props.label}
-          </div>
+          </label>
           <Autocomplete
           getItemValue={(item) => item.label}
           items={this.state.inputOptions}
@@ -45,6 +61,10 @@ export class TextInput extends React.Component {
           value={this.state.value}
           onChange={this.handleChange}
           onSelect={(val) => this.setState({ value: val })}
+          renderInput={function(props) {
+            return <input {...props} style={formStyle}/>
+          }}
+          wrapperStyle={wrapperStyle}
           />
         </div>
       );
@@ -54,6 +74,9 @@ export class TextInput extends React.Component {
 
   }
 }
+
+
+
 
 TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
@@ -77,8 +100,9 @@ export class NumberListInput extends React.Component {
       <div>
         <label>
           {this.props.label}
-          <input type="number" min="1" name={this.props.name} onChange = {this.handleChange} />
         </label>
+        <input type="number" min="1" name={this.props.name} onChange = {this.handleChange} 
+          className={styles.formStyling} />
       </div>
     );
   }

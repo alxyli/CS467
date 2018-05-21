@@ -6,15 +6,15 @@
 
 .inputForm{
   grid-column: 4 / 6;
-  align-self: center;
-  justify-self: left;
+  border: 5px solid red;
+  height: 77.5vh;
 
 }
 
 .container{
   display: grid;
   grid-template-columns: auto 15vw 15vw 15vw 15vw auto;
-  grid-template-rows: 75vh;
+  grid-template-rows: 80vh;
   justify-content: center;
   align-content: center;
   grid-gap: 10px;
