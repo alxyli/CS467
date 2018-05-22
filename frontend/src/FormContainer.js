@@ -125,18 +125,19 @@ export class FormContainer extends Component {
               <li className={styles.signinActive}><a className={styles.btn}>Crawl Input</a></li>
             </ul>
           </div>
-          <form onSubmit={this.handleSubmit} class={styles.formSignin}>
+          <form onSubmit={this.handleSubmit} className={styles.formSignin}>
             <TextInput value={this.state.website} name="website" onChange={this.handleChangeText} 
-              label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} />   
+              label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} 
+              inputStyle={styles.formStyling}/>   
             <SearchTypeInput name="sType" onChange={this.handleChange}/>
-            <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"/>
-            <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
-              label="Search Term:" isActive={this.state.advancedOn} 
-              prevSearchTerms = {this.state.prevSearchTerms} />   
+            <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"/> 
             <div>
               <input type="checkbox" id="checkbox" onChange={this.toggleAdvancedOptions} />
-              <label for="checkbox" ><span class={styles.ui}></span>Advanced Options</label>
+              <label htmlFor="checkbox" ><span className={styles.ui}></span>Advanced Options</label>
             </div>
+            <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
+              label="Search Term:" isActive={this.state.advancedOn} 
+              prevSearchTerms = {this.state.prevSearchTerms} inputStyle={styles.formStyling} />  
             <div className={styles.btnAnimate}>
               <input className={styles.btnSignin} type="submit" value="Submit" />
             </div>

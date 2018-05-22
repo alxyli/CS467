@@ -3,16 +3,6 @@ import PropTypes from 'prop-types';
 import Autocomplete from 'react-autocomplete';
 import styles from './css/Form.css';
 
-const formStyle = {
-  width: '100%',
-  height: '35px',
-  'padding-left': '15px',
-  border: 'none',
-  'border-radius': '20px',
-  'margin-bottom': '2px',
-  background: 'rgba(255,255,255,.2)'
-};
-
 const wrapperStyle = {
   width: '100%'
 };
@@ -44,6 +34,8 @@ export class TextInput extends React.Component {
 
   render() {
 
+    const formStyling = this.props.inputStyle;
+
     if(this.props.isActive){
       return (
         <div>
@@ -62,7 +54,7 @@ export class TextInput extends React.Component {
           onChange={this.handleChange}
           onSelect={(val) => this.setState({ value: val })}
           renderInput={function(props) {
-            return <input {...props} style={formStyle}/>
+            return <input {...props} className={formStyling}/>
           }}
           wrapperStyle={wrapperStyle}
           />
