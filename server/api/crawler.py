@@ -20,6 +20,7 @@ CORS(app)
 lastid = 0
 isDFS = False 
 searchTerm = "" 
+SearchTermIsFound = 0
  
 @app.route('/')
 def api_root():
@@ -52,7 +53,15 @@ def setlastid(value):
 def getlastid():
     global lastid
     return  lastid 
- 
+
+def setSearchTermIsFound(value):
+    global SearchTermIsFound
+    SearchTermIsFound = value
+
+def getSearchTermIsFound():
+    global SearchTermIsFound
+    return  SearchTermIsFound 
+  
 def setmaxdepth(value):
     global maxdepth
     maxdepth = value
@@ -159,7 +168,7 @@ def initList(URLList,url):
     
 
 def BFS_Search(URLList,targetdepth):
-    if (targetdepth==getmaxdepth()):
+    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1))):
         return URLList
     for childurl in URLList:
             if (childurl.get('depth',None) == targetdepth):
@@ -168,7 +177,7 @@ def BFS_Search(URLList,targetdepth):
     return URLList
 
 def DFS_Search(urlRecord,targetdepth,URLList):
-    if (targetdepth==getmaxdepth()):
+    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1))):
         return URLList
     if isinstance(urlRecord, dict): #TODO: Fix this code and get rid of this patch
         urlResult = ReadURLOnPage(urlRecord.get('url',None),urlRecord.get('id',None),targetdepth+1,URLList)
@@ -184,7 +193,8 @@ def searchThisPageForSearchWord(html,webpage):
         searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
         searchLen = len(searchResults)
         if searchLen > 0:
-            found = 1   
+            found = 1
+            setSearchTermIsFound(1)   
     return found
 
 def ReadURLOnPage(url,parentid,depth,URLList):
@@ -217,6 +227,8 @@ def ReadURLOnPage(url,parentid,depth,URLList):
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found}
             URLList.append(urlrecord)
+            if (found == 1):
+                break
         setlastid(url_id)
     return URLList
 
