@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './animation.css';
+import styles from './css/animation.css';
 
 export class LoadingAnimation extends React.Component {
   render() {
