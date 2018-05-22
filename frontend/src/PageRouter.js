@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { LoadingAnimation } from './LoadingAnimation';
 import { GraphRenderer } from './GraphRenderer.js';
 import { InputPage } from './Input_Page';
-import styles from './PageRouter.css';
 
 const API = 'http://52.39.153.11:5002/findurl';
 

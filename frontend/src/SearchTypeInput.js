@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './css/Form.css';
 
 export class SearchTypeInput extends React.Component {
   constructor(props){
@@ -17,12 +18,11 @@ export class SearchTypeInput extends React.Component {
         <label>
           Search Type:
         </label>
-        <select id="search-types" name={this.props.name} onChange={this.handleChange}>
-          <option value="dfs">
+        <select id="search-types" name={this.props.name} onChange={this.handleChange} className={styles.formStyling}>
+          <option value="dfs" className={styles.formSignIn}>
             Depth First Search
           </option>
-
-          <option value="bfs">
+          <option value="bfs" className={styles.formSignIn}>
             Breadth First Search
           </option>
         </select>
