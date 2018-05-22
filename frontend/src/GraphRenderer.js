@@ -1,13 +1,11 @@
 import React from 'react'
 import {Sigma, RandomizeNodePositions, RelativeSize, NOverlap} from 'react-sigma';
+import styles from './css/Form.css';
 
 var sigmaGraphData = {
       nodes: [],
       edges: []
 }
-
-var xCoord = 0;
-var yCoord = 0;
 
 export class GraphRenderer extends React.Component {
 	constructor(props) {
@@ -18,6 +16,7 @@ export class GraphRenderer extends React.Component {
 
 		this.buildSigmaGraph = this.buildSigmaGraph.bind(this);
 		this.buildSigmaNodes = this.buildSigmaNodes.bind(this);
+    this.backButtonHandler = this.backButtonHandler.bind(this);
 	}
 
 	buildSigmaNodes(graphData) {
@@ -49,15 +48,11 @@ export class GraphRenderer extends React.Component {
         id: "n" + value.id,
         label: value.url,
         parent: "n" + parentNode,
-        x: xCoord,
-        y: yCoord,
         size: 7,
         color: color
       }
 
       sigmaGraphData.nodes.push(tempNode);
-      xCoord++;
-      yCoord++;
     });
 
     console.log(sigmaGraphData);
@@ -86,13 +81,25 @@ export class GraphRenderer extends React.Component {
   	return sigmaGraphData;
   }
 
+  backButtonHandler() {
+    // wipe sigmaGraphData object on Back button press
+    sigmaGraphData = {
+      nodes: [],
+      edges: []
+    }
+    this.props.backHandler();
+  }
+
 	render() {
 			return (
 				<div>
-					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } style={{width: "1000px", height: "500px" }} settings={{drawEdges: true, clone: false}}>
+					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } style={{width: "1000px", height: "500px" }} settings={{drawEdges: true, clone: false}} onClickNode={e => window.open(e.data.node.label)}>
           <RandomizeNodePositions />
           <NOverlap nodeMargin={15} gridSize={1000} maxIterations={150}/>
-        	</Sigma>
+          </Sigma>
+           <div className={styles.btnAnimate}>
+            <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button>
+           </div>
 				</div>
 			)
 		}

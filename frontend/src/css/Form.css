@@ -214,6 +214,17 @@ label {
   padding-left: 10px;
 }
 
+.backBtn {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
 .btnAnimate {
 
 padding-top: 8px;
