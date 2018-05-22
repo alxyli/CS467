@@ -207,7 +207,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
  #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/ 
     url_id = getlastid()
     htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://|^https://")})
-
+ 
     if getisDFS():
         resultLen = len(htmlSearch)
         if (resultLen > 0):
