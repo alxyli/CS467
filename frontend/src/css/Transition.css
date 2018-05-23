@@ -1,0 +1,64 @@
+.input-entering{
+  border: dotted;
+  animation-name: main_fadeIn;
+  animation-duration: 10s;
+}
+
+.input-exiting{
+  animation-name: main_fadeOut;
+  animation-duration: 0.5s;
+}
+
+.loading-entering{
+  animation-name: main_fadeIn;
+  animation-duration: 0.5s;
+}
+
+.loading-exiting{
+  animation-name: main_fadeOut;
+  animation-duration: 0.5s;
+}
+
+@keyframes main_fadeIn {
+  0%  {opacity: 0} 
+  100% {opacity: 1}
+}
+
+@keyframes main_fadeOut {
+  0%  {opacity: 0} 
+  100% {opacity: 1}
+}
+
+@keyframes diag_rot_ccw {
+  0%, 100% {transform: rotate(0deg)} 
+  20% {transform: rotate(0deg)}
+  25% {transform: rotate(-45deg)}  
+  75% {transform: rotate(-45deg)} 
+  80% {transform: rotate(0deg)}
+}
+
+@keyframes cw_rotate {
+  0%, 100%{transform: rotate(0deg)} 
+  20% {transform: rotate(60deg)} 
+  80% {transform: rotate(60deg)} 
+}
+
+@keyframes ccw_rotate {
+0%, 100%{transform: rotate(0deg)} 
+20% {transform: rotate(-60deg)} 
+80% {transform: rotate(-60deg)} 
+}
+
+@keyframes main_rotate {
+  0% {transform: rotate(0deg)} 
+  35% {transform: rotate(0deg)} 
+  65% {transform: rotate(720deg)}
+  100% {transform: rotate(720deg)} 
+}
+
+@keyframes nw_move {
+  0%, 100% {transform: translate(0, 0)} 
+  25% {transform: translate(0, 100px)} 
+  50% {transform: translate(100px, 100px)} 
+  75% {transform: translate(100px, 0)} 
+}

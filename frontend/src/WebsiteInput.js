@@ -7,7 +7,6 @@ const wrapperStyle = {
   width: '100%'
 };
 
-
 export class TextInput extends React.Component {
   constructor(props){
     super(props);
@@ -19,8 +18,12 @@ export class TextInput extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({ value: e.target.value })
-    this.props.onChange(this.props.name, e.target.value);
+    this.setValue(e.target.value );
+  }
+
+  setValue = (e) => {
+    this.setState({ value: e })
+    this.props.onChange(this.props.name, e);
   }
 
   componentWillMount() {
@@ -52,7 +55,7 @@ export class TextInput extends React.Component {
           }
           value={this.state.value}
           onChange={this.handleChange}
-          onSelect={(val) => this.setState({ value: val })}
+          onSelect={(val) => this.setValue(val)}
           renderInput={function(props) {
             return <input {...props} className={formStyling}/>
           }}
@@ -66,9 +69,6 @@ export class TextInput extends React.Component {
 
   }
 }
-
-
-
 
 TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,

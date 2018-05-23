@@ -41,8 +41,6 @@ export class FormContainer extends Component {
     }
   }
 
-  
-
   toggleAdvancedOptions(){
     this.setState({ 
       advancedOn: !this.state.advancedOn
@@ -65,6 +63,7 @@ export class FormContainer extends Component {
   }
 
   verifyInput(){
+    console.log(this.state.website, this.state.sType, this.state.sLimit);
     if(this.state.website !== '' && this.state.sType !== '' && this.state.sLimit !== ''){
       if(this.state.advanceOn && this.state.searchTerm !== ''){
         return true;
@@ -102,14 +101,10 @@ export class FormContainer extends Component {
     cookie.remove('prevSearchInformation', { path: '/' })
     // For some reason you have to stringify the results twice to get it in the correct format
     cookie.save('prevSearchInformation', JSON.stringify(JSON.stringify(cookieAdd)), { path: '/' });
-
-
   }
 
   handleSubmit(e) {
-    console.log(e);
     e.preventDefault();
-    console.log(this.verifyInput())
     if(this.verifyInput()){
       this.addToCookie()
       this.props.onQueryAPI(this.createQueryData());
