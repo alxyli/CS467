@@ -190,7 +190,7 @@ def BFS_Search(URLList,targetdepth):
     return URLList
 
 def DFS_Search(urlRecord,targetdepth,URLList):
-    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1)) or (getdeadEnd() == 1)): 
+    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1)) or (getdeadEnd() == 1)):  
         return URLList
     if isinstance(urlRecord, dict): #TODO: Fix this code and get rid of this patch
         urlResult = ReadURLOnPage(urlRecord.get('url',None),urlRecord.get('id',None),targetdepth+1,URLList)
