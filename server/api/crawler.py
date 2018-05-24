@@ -21,10 +21,19 @@ lastid = 0
 isDFS = False 
 searchTerm = "" 
 SearchTermIsFound = 0
+deadEnd = 0
  
 @app.route('/')
 def api_root():
     return 'Welcome'
+
+def setdeadEnd(value):
+    global deadEnd
+    deadEnd = value
+
+def getdeadEnd():
+    global deadEnd
+    return  deadEnd 
 
 def setisDFS(value):
     global isDFS
@@ -36,6 +45,10 @@ def setisDFS(value):
 def getisDFS():
     global isDFS
     return  isDFS 
+ 
+
+
+
  
 def setsearchTerm(value):
     global searchTerm
@@ -162,7 +175,7 @@ def api_URLFIND():
         results = BFS_Search(urlList,1)         
     return jsonify(results)
 def initList(URLList,url):
-    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0}
+    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0}
     setlastid(1)
     URLList.append(urlrecord)
     
@@ -177,7 +190,7 @@ def BFS_Search(URLList,targetdepth):
     return URLList
 
 def DFS_Search(urlRecord,targetdepth,URLList):
-    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1))):
+    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1)) or (getdeadEnd() == 1)): 
         return URLList
     if isinstance(urlRecord, dict): #TODO: Fix this code and get rid of this patch
         urlResult = ReadURLOnPage(urlRecord.get('url',None),urlRecord.get('id',None),targetdepth+1,URLList)
@@ -210,22 +223,31 @@ def ReadURLOnPage(url,parentid,depth,URLList):
  
     if getisDFS():
         resultLen = len(htmlSearch)
-        if (resultLen > 0):
+        if (resultLen == 0):
+            lastItem = URLList[-1]
+            lastItem["deadend"] = 1
+            newUrlList = URLList[:-1]
+            newUrlList.append(lastItem)
+            URLList = newUrlList
+            setdeadEnd(1)
+            return URLList
+        
+        else:
             randURLID = randint(0, resultLen-1)
             htmlSearch = htmlSearch[randURLID]
             foundurl = htmlSearch.get('href')
             found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
-            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found}
+            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found,"deadend":0}
             URLList.append(urlrecord)
             setlastid(url_id)
             return urlrecord
-    else:
+    else: #BFS search
         for link in  htmlSearch:#html.findAll('a', attrs={'href': re.compile("^http://")}):
             foundurl = link.get('href')
             found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
-            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found}
+            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found,"deadend":0}
             URLList.append(urlrecord)
             if (found == 1):
                 break
