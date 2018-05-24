@@ -20,7 +20,7 @@ export class GraphRenderer extends React.Component {
 	}
 
 	buildSigmaNodes(graphData) {
-    Object.entries(graphData).map(([key, value]) => {
+    Object.entries(graphData).forEach(([key, value]) => {
       let parentid = value.parentid;
       let parentNode = "";
       let color = "";
@@ -62,7 +62,7 @@ export class GraphRenderer extends React.Component {
   	this.buildSigmaNodes(graphData);
 
   	var i = 0;
-  	Object.keys(sigmaGraphData.nodes).map((nodes, idx) => {
+  	Object.keys(sigmaGraphData.nodes).forEach((nodes, idx) => {
   	
   			console.log(idx);
 
@@ -93,9 +93,11 @@ export class GraphRenderer extends React.Component {
 	render() {
 			return (
 				<div>
-					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } style={{width: "1000px", height: "500px" }} settings={{drawEdges: true, clone: false}} onClickNode={e => window.open(e.data.node.label)}>
+					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } 
+          settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
+          onClickNode={e => window.open(e.data.node.label)}>
           <RandomizeNodePositions />
-          <NOverlap nodeMargin={15} gridSize={1000} maxIterations={150}/>
+          <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
           </Sigma>
            <div className={styles.btnAnimate}>
             <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button>
