@@ -4,7 +4,7 @@ import { GraphRenderer } from './GraphRenderer.js';
 import { InputPage } from './Input_Page';
 import Transition from 'react-transition-group/Transition';
 
-const API = 'http://52.39.153.11:5002/findurl';
+const API = 'http://52.39.153.11:5006/findurl';
 
 const duration = 300;
 
@@ -36,15 +36,15 @@ export class PageRouter extends Component {
     
     this.handleAPIRequest = this.handleAPIRequest.bind(this);
     this.backToInput = this.backToInput.bind(this);
-    this.forwardToResults = this.forwardToResults.bind(this);
   }
 
   backToInput() {
     this.setState({ isLoading: false, hasLoaded: false, showInput: true });
   }
 
-  forwardToResults() {
-    this.setState({ showResults: true });
+  forwardToResults = () => {
+    console.log("Forward to results");
+    //this.setState({ showResults: true });
   }
 
   componentDidMount(){
@@ -68,6 +68,10 @@ export class PageRouter extends Component {
 
   loadGraphResults = (dataIn) => {
     this.setState({ queryData: dataIn, showInput: false });
+  }
+
+  testFunc = () => {
+    console.log("test123");
   }
 
   // Takes care of talking with the server
@@ -140,39 +144,10 @@ export class PageRouter extends Component {
             ...defaultStyle,
             ...transitionStyles[status]
           }}>
-            <InputPage onQueryAPI={this.loadGraphResults} />
-            {!isEmpty(graphData) &&
-            <button onClick={this.forwardToResults} type="button" >Results</button>}
+            <InputPage onQueryAPI={this.loadGraphResults} toResults={this.loadGraphResults} graphData={graphData}/>
           </div>
         )}
       </Transition>
     );
   }
-}
-
-function isEmpty(obj) {
-  // Speed up calls to hasOwnProperty
-    var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-    // null and undefined are "empty"
-    if (obj == null) return true;
-
-    // Assume if it has a length property with a non-zero value
-    // that that property is correct.
-    if (obj.length > 0)    return false;
-    if (obj.length === 0)  return true;
-
-    // If it isn't an object at this point
-    // it is empty, but it can't be anything *but* empty
-    // Is it empty?  Depends on your application.
-    if (typeof obj !== "object") return true;
-
-    // Otherwise, does it have any properties of its own?
-    // Note that this doesn't handle
-    // toString and valueOf enumeration bugs in IE < 9
-    for (var key in obj) {
-        if (hasOwnProperty.call(obj, key)) return false;
-    }
-
-    return true;
 }

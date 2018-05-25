@@ -83,18 +83,29 @@ export class NumberListInput extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   
+  getMaxValue = () => {
+    return (this.props.type === 'dfs') ? 150 : 3
+  }
+
   handleChange(e){
+    console.log(e.target.value);
+    const maximum = this.getMaxValue();
+    if(e.target.value === '');
+    else if(e.target.value > maximum) e.target.value = maximum;
+    else if(e.target.value < 1) e.target.value = 1;
     this.props.onChange(e);
   }
 
   render() {
+    const maximum = this.getMaxValue();
+    const placeholder = "1 - " + maximum;
     return (
       <div>
         <label>
           {this.props.label}
         </label>
-        <input type="number" min="1" name={this.props.name} onChange = {this.handleChange} 
-          className={styles.formStyling} />
+        <input type="number" min="1" max={maximum} name={this.props.name} onChange = {this.handleChange} 
+          className={styles.formStyling} placeholder={placeholder}/>
       </div>
     );
   }
@@ -103,5 +114,6 @@ export class NumberListInput extends React.Component {
 NumberListInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 };
