@@ -48,6 +48,22 @@ input[type=submit]:hover {
   background-color: rgba(45, 74, 236, 0.637);
 }
 
+button[type=button] {
+  background-color: rgb(26, 139, 11);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+button[type=button]:hover {
+  background-color: rgb(26, 139, 11, 0.637);
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";

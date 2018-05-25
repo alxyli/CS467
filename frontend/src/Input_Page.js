@@ -13,7 +13,7 @@ export class InputPage extends React.Component {
             <Logo/>
           </div>
           <div className={styles.inputForm}>
-            <FormContainer onQueryAPI={this.props.onQueryAPI} />
+            <FormContainer onQueryAPI={this.props.onQueryAPI} toResults={this.props.toResults} />
           </div>
         </div>
       );
@@ -21,6 +21,7 @@ export class InputPage extends React.Component {
 }
 
 InputPage.propTypes = {
-  onQueryAPI: PropTypes.func.isRequired
+  onQueryAPI: PropTypes.func.isRequired,
+  toResults: PropTypes.func.isRequired
 };
 

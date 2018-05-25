@@ -7,7 +7,6 @@ const wrapperStyle = {
   width: '100%'
 };
 
-
 export class TextInput extends React.Component {
   constructor(props){
     super(props);
@@ -19,8 +18,12 @@ export class TextInput extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({ value: e.target.value })
-    this.props.onChange(this.props.name, e.target.value);
+    this.setValue(e.target.value );
+  }
+
+  setValue = (e) => {
+    this.setState({ value: e })
+    this.props.onChange(this.props.name, e);
   }
 
   componentWillMount() {
@@ -52,7 +55,7 @@ export class TextInput extends React.Component {
           }
           value={this.state.value}
           onChange={this.handleChange}
-          onSelect={(val) => this.setState({ value: val })}
+          onSelect={(val) => this.setValue(val)}
           renderInput={function(props) {
             return <input {...props} className={formStyling}/>
           }}
@@ -67,9 +70,6 @@ export class TextInput extends React.Component {
   }
 }
 
-
-
-
 TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
@@ -83,18 +83,29 @@ export class NumberListInput extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   
+  getMaxValue = () => {
+    return (this.props.type === 'dfs') ? 150 : 3
+  }
+
   handleChange(e){
+    console.log(e.target.value);
+    const maximum = this.getMaxValue();
+    if(e.target.value === '');
+    else if(e.target.value > maximum) e.target.value = maximum;
+    else if(e.target.value < 1) e.target.value = 1;
     this.props.onChange(e);
   }
 
   render() {
+    const maximum = this.getMaxValue();
+    const placeholder = "1 - " + maximum;
     return (
       <div>
         <label>
           {this.props.label}
         </label>
-        <input type="number" min="1" name={this.props.name} onChange = {this.handleChange} 
-          className={styles.formStyling} />
+        <input type="number" min="1" max={maximum} name={this.props.name} onChange = {this.handleChange} 
+          className={styles.formStyling} placeholder={placeholder}/>
       </div>
     );
   }
@@ -103,5 +114,6 @@ export class NumberListInput extends React.Component {
 NumberListInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 };
