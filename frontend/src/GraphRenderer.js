@@ -94,6 +94,7 @@ export class GraphRenderer extends React.Component {
 			return (
 				<div>
 					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } 
+          style={{height: "550px"}}
           settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
           onClickNode={e => window.open(e.data.node.label)}>
           <RandomizeNodePositions />
