@@ -14,7 +14,7 @@ from flask import jsonify
 from flask_cors import CORS
 from random import randint
 from sys import platform
-from Tools.demo import eiffel
+ 
 
 app = Flask(__name__)
 CORS(app)
