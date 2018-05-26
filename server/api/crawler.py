@@ -14,6 +14,7 @@ from flask import jsonify
 from flask_cors import CORS
 from random import randint
 from sys import platform
+from Tools.demo import eiffel
 
 app = Flask(__name__)
 CORS(app)
@@ -104,6 +105,8 @@ def simple_get(url):
         with closing(get(url, stream=True)) as resp:
             if is_good_response(resp):
                 return resp.content
+            elif is_Too_Many_Request_response(resp):
+                return "429"
             else:
                 return None
 
@@ -111,7 +114,11 @@ def simple_get(url):
         log_error('Error during requests to {0} : {1}'.format(url, str(e)))
         return None
 
-
+def is_Too_Many_Request_response(resp):
+    """
+    Returns true if the response is 429, indicating too many request to this server 
+    """
+    return (resp.status_code == 429) 
 def is_good_response(resp):
     """
     Returns true if the response seems to be HTML, false otherwise
@@ -163,28 +170,29 @@ def api_URLFIND():
         depth = 3    
     setmaxdepth(depth)
     setsearchTerm(searchTerm)
-    urlList = []
-    initList(urlList,url)     
+    URLList = []
+    URLList = initList(URLList,url)     
     
     setisDFS(dfs)
     if getisDFS():
-        urlRecord = ReadURLOnPage(url,1,1,urlList)
-        results = DFS_Search(urlRecord,1,urlList)
+        urlRecord = ReadURLOnPage(url,1,1,URLList)
+        results = DFS_Search(urlRecord,1,URLList)
     else:
-        ReadURLOnPage(url,1,1,urlList)
-        results = BFS_Search(urlList,1)         
+        ReadURLOnPage(url,1,1,URLList)
+        results = BFS_Search(URLList,1)         
     return jsonify(results)
 def initList(URLList,url):
     urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0}
     setlastid(1)
     URLList.append(urlrecord)
-    
+    return URLList
 
 def BFS_Search(URLList,targetdepth):
     if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1))):
         return URLList
     for childurl in URLList:
-            if (childurl.get('depth',None) == targetdepth):
+            #url":foundurl,"parenturl":url
+            if (childurl.get('depth',None) == targetdepth) :
                 ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
     BFS_Search(URLList,targetdepth+1)
     return URLList
@@ -210,12 +218,29 @@ def searchThisPageForSearchWord(html,webpage):
             setSearchTermIsFound(1)   
     return found
 
+def handleDeadEnd(URLList,url):
+    if len(URLList) > 1:
+        lastItem = URLList[-1]
+    elif len(URLList) == 1:
+        lastItem = URLList[0]
+    else:    
+        initList(URLList,url)
+        lastItem = URLList[0]
+        
+    lastItem["deadend"] = 1
+    newUrlList = URLList[:-1]
+    newUrlList.append(lastItem)
+    URLList = newUrlList
+    setdeadEnd(1)
+    return URLList
 def ReadURLOnPage(url,parentid,depth,URLList):
     if url is None:
         return
     raw_html = simple_get(url)
     if raw_html is None:
         return
+    if raw_html == 429:
+        return handleDeadEnd(URLList,url)
     html = BeautifulSoup(raw_html, 'html.parser')
  #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/   
     url_id = getlastid()
@@ -224,18 +249,13 @@ def ReadURLOnPage(url,parentid,depth,URLList):
     if getisDFS():
         resultLen = len(htmlSearch)
         if (resultLen == 0):
-            lastItem = URLList[-1]
-            lastItem["deadend"] = 1
-            newUrlList = URLList[:-1]
-            newUrlList.append(lastItem)
-            URLList = newUrlList
-            setdeadEnd(1)
-            return URLList
-        
+            return handleDeadEnd(URLList,url)
         else:
             randURLID = randint(0, resultLen-1)
             htmlSearch = htmlSearch[randURLID]
             foundurl = htmlSearch.get('href')
+            if (foundurl == url): #url we found matches the parent, so bail out
+                return handleDeadEnd(URLList,url)
             found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found,"deadend":0}
@@ -248,7 +268,8 @@ def ReadURLOnPage(url,parentid,depth,URLList):
             found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found,"deadend":0}
-            URLList.append(urlrecord)
+            if (foundurl != url):
+                URLList.append(urlrecord)
             if (found == 1):
                 break
         setlastid(url_id)
