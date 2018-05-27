@@ -23,6 +23,8 @@ isDFS = False
 searchTerm = "" 
 SearchTermIsFound = 0
 deadEnd = 0
+#repeat = 0 #for debugging
+searchedURLs = []
  
 @app.route('/')
 def api_root():
@@ -179,12 +181,16 @@ def api_URLFIND():
         results = DFS_Search(urlRecord,1,URLList)
     else:
         ReadURLOnPage(url,1,1,URLList)
-        results = BFS_Search(URLList,1)         
+        results = BFS_Search(URLList,1) 
+    #global repeat #for debugging
+    #print("found this" + str(repeat))             
     return jsonify(results)
 def initList(URLList,url):
     urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0}
     setlastid(1)
     URLList.append(urlrecord)
+    global searchedURLs
+    searchedURLs = []
     return URLList
 
 def BFS_Search(URLList,targetdepth):
@@ -236,6 +242,11 @@ def handleDeadEnd(URLList,url):
 def ReadURLOnPage(url,parentid,depth,URLList):
     if url is None:
         return
+    if url in searchedURLs:
+       # global repeat #for debugging
+       # repeat = repeat + 1 #for debugging
+        return URLList
+    searchedURLs.append(url)    
     raw_html = simple_get(url)
     if raw_html is None:
         return
