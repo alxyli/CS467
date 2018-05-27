@@ -14,7 +14,9 @@ from flask import jsonify
 from flask_cors import CORS
 from random import randint
 from sys import platform
- 
+import logging 
+from fileinput import filename
+from test.test_logging import LEVEL_RANGE
 
 app = Flask(__name__)
 CORS(app)
@@ -293,6 +295,7 @@ def apply_caching(response):
     return response
 
 if __name__ == "__main__":
+    logging.basicConfig(filename='crawler.log',level=logging.DEBUG)
     if platform == "linux" or platform == "linux2":
         app.run(host= '172.31.22.173',port=5006)
     else:
