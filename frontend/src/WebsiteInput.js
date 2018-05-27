@@ -36,8 +36,7 @@ export class TextInput extends React.Component {
   }
 
   render() {
-
-    const formStyling = this.props.inputStyle;
+    const Error = (this.props.error) ? styles.error : styles.noError;
 
     if(this.props.isActive){
       return (
@@ -57,7 +56,7 @@ export class TextInput extends React.Component {
           onChange={this.handleChange}
           onSelect={(val) => this.setValue(val)}
           renderInput={function(props) {
-            return <input {...props} className={formStyling}/>
+            return <input {...props} className={[styles.formStyling, Error].join(' ')}/>
           }}
           wrapperStyle={wrapperStyle}
           />
@@ -74,7 +73,8 @@ TextInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  prevSearchTerms: PropTypes.array.isRequired
+  prevSearchTerms: PropTypes.array.isRequired,
+  error: PropTypes.bool.isRequired
 };
 
 export class NumberListInput extends React.Component {
@@ -97,6 +97,7 @@ export class NumberListInput extends React.Component {
   }
 
   render() {
+    const Error = (this.props.error) ? styles.error : styles.noError;
     const maximum = this.getMaxValue();
     const placeholder = "1 - " + maximum;
     return (
@@ -105,15 +106,18 @@ export class NumberListInput extends React.Component {
           {this.props.label}
         </label>
         <input type="number" min="1" max={maximum} name={this.props.name} onChange = {this.handleChange} 
-          className={styles.formStyling} placeholder={placeholder}/>
+          className={[styles.formStyling, Error].join(' ')} placeholder={placeholder}/>
       </div>
     );
   }
 }
 
+
+
 NumberListInput.propTypes = {
   onChange: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.string.isRequired,
+  error: PropTypes.bool.isRequired
 };

@@ -11,20 +11,14 @@ export class FormContainer extends Component {
     this.state = {
       website: '',
       sType: 'dfs',
-      sLimit: 1,
+      sLimit: '',
       searchTerm: '',
       advancedOn: false,
       isLoading: false,
       prevStartPages: [],
-      prevSearchTerms: []
+      prevSearchTerms: [],
+      searchInitiated: false
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.toggleAdvancedOptions = this.toggleAdvancedOptions.bind(this);
-    this.verifyInput = this.verifyInput.bind(this);
-    this.createQueryData = this.createQueryData.bind(this);
-    this.addToCookie = this.addToCookie.bind(this);
-    this.handleChangeText = this.handleChangeText.bind(this);
   }
 
   componentWillMount() {
@@ -39,7 +33,7 @@ export class FormContainer extends Component {
     }
   }
 
-  toggleAdvancedOptions(){
+  toggleAdvancedOptions = () => {
     this.setState({ 
       advancedOn: !this.state.advancedOn
     });
@@ -48,30 +42,30 @@ export class FormContainer extends Component {
     }
   }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({
        [e.target.name]: e.target.value 
       });
   }
 
-  handleChangeText(name, value){
+  handleChangeText = (name, value) => {
     this.setState({
       [name]: value 
      });
   }
 
-  verifyInput(){
-    console.log(this.state.website, this.state.sType, this.state.sLimit);
+  verifyInput = () => {
     if(this.state.website !== '' && this.state.sType !== '' && this.state.sLimit !== ''){
       if(this.state.advanceOn && this.state.searchTerm !== ''){
         return true;
       }
       return true;
     }
+    this.setState( { searchInitiated : true })
     return false;
   }
 
-  createQueryData(){
+  createQueryData = () => {
     return {
       url: this.state.website,
       depth: this.state.sLimit,
@@ -81,7 +75,7 @@ export class FormContainer extends Component {
   }
 
   // When submitting a new search, save the search term on the cookie
-  addToCookie(){
+  addToCookie = () => {
     // Check if the page is already in the object
     const psp = this.state.prevStartPages;
     if(!psp.includes(this.state.website)){
@@ -102,21 +96,24 @@ export class FormContainer extends Component {
     cookie.save('prevSearchInformation', JSON.stringify(JSON.stringify(cookieAdd)), { path: '/' });
   }
 
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     e.preventDefault();
-    //this.props.testFunc();
-    this.props.toResults();
     if(this.verifyInput()){
       this.addToCookie()
       this.props.onQueryAPI(this.createQueryData());
     }
   }
 
-  testThing = () =>{
-    console.log(this.props);
-  }
-
   render() {
+    const { website, sType, sLimit, searchTerm, searchInitiated, advancedOn } = this.state
+    
+    // Check if some of the form items have not been filled out
+    const webInputError = (website === '' && searchInitiated) ? (true) : (false);
+    const searchLimitError = (sLimit === '' && searchInitiated) ? (true) : (false);
+    const termInputError = (searchTerm === '' && searchInitiated && advancedOn) ? (true) : (false);
+
+    console.log(searchInitiated);
+    
     const button = (isEmpty(this.props.graphData)) ? (
       <div className={styles.btnAnimate}>
         <input className={styles.btnSignin} type="submit" value="Submit" />
@@ -133,6 +130,7 @@ export class FormContainer extends Component {
         </div>
       </div>
     );
+
     return (
       <div className={styles.container}>
         <div className={styles.frame}>
@@ -142,20 +140,20 @@ export class FormContainer extends Component {
             </ul>
           </div>
           <form onSubmit={this.handleSubmit} className={styles.formSignin}>
-            <TextInput value={this.state.website} name="website" onChange={this.handleChangeText} 
+            <TextInput value={website} name="website" onChange={this.handleChangeText} 
               label="Website:" isActive={true} prevSearchTerms = {this.state.prevStartPages} 
-              inputStyle={styles.formStyling}/>   
+              error={webInputError} />   
             <SearchTypeInput name="sType" onChange={this.handleChange}/>
             <NumberListInput name="sLimit" onChange={this.handleChange} label="Search Limit:"
-            type={this.state.sType} value={this.state.sLimit}/> 
+            type={sType} value={sLimit} error={searchLimitError}/> 
             <div>
               <input type="checkbox" id="checkbox" onChange={this.toggleAdvancedOptions} />
               <label htmlFor="checkbox" ><span className={styles.ui}></span>Advanced Options</label>
             </div>
-            <TextInput value={this.state.searchTerm} name="searchTerm" onChange={this.handleChangeText} 
+            <TextInput value={searchTerm} name="searchTerm" onChange={this.handleChangeText} 
               label="Search Term:" isActive={this.state.advancedOn} 
-              prevSearchTerms = {this.state.prevSearchTerms} inputStyle={styles.formStyling}
-              />  
+              prevSearchTerms = {this.state.prevSearchTerms}
+              error={termInputError}/>  
             {button}
           </form>
         </div>

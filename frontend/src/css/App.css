@@ -15,7 +15,12 @@
 }
 
 .appTitle {
-  font-size: 1.5em;
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+  color:rgb(5, 93, 207);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 6vh;
 }
 
 .appIntro {
@@ -37,7 +42,7 @@
 
 .bodyTwo {
   height:80vh;
-  background-image: url("./background.jpg");
+  background-image: url("./background5.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right top;

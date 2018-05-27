@@ -7,7 +7,9 @@ export class App extends Component {
   render() {
         return (
           <div>
-            <header> </header>
+            <header >
+              <div className={styles.appTitle}>Crawl With Me</div>
+            </header>
             <div className={styles.bodyTwo}>
               <PageRouter />
             </div>

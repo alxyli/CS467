@@ -32,13 +32,13 @@
   }
 
   .bar.diag {
-    background-color: rgb(3, 149, 194);
+    background-color: rgb(6, 55, 190);
     height: 2em;
     margin-left: -3px;
   }
 
   .bar.main {
-    background-color: rgb(3, 149, 194);
+    background-color: rgb(6, 55, 190);
     height: 500em;
     bottom: 0px;
     top: 0px;
