@@ -135,9 +135,6 @@ export class PageRouter extends Component {
 
     return (
       <Transition in={this.state.showInput} timeout={duration} unmountOnExit appear
-      onEntering={() => console.log('entering')}
-      onEntered={() => console.log('entered')}
-      onExiting={() => console.log('exiting')}
       onExited={() => this.inputTransitionExit()}>
         {(status) => (
           <div style={{

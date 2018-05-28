@@ -18,7 +18,8 @@ export class SearchTypeInput extends React.Component {
         <label>
           Search Type:
         </label>
-        <select id="search-types" name={this.props.name} onChange={this.handleChange} className={styles.formStyling}>
+        <select id="search-types" name={this.props.name} onChange={this.handleChange} 
+          className={[styles.formStyling, styles.noError].join(' ')}>
           <option value="dfs" className={styles.formSignIn}>
             Depth First Search
           </option>
