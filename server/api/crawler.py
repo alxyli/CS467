@@ -193,6 +193,8 @@ def initList(URLList,url):
     URLList.append(urlrecord)
     global searchedURLs
     searchedURLs = []
+    setdeadEnd(0)
+    setSearchTermIsFound(0)
     return URLList
 
 def BFS_Search(URLList,targetdepth):
