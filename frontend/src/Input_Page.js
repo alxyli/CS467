@@ -13,7 +13,8 @@ export class InputPage extends React.Component {
             <Logo/>
           </div>
           <div className={styles.inputForm}>
-            <FormContainer onQueryAPI={this.props.onQueryAPI} toResults={this.props.toResults} />
+            <FormContainer onQueryAPI={this.props.onQueryAPI} toResults={this.props.toResults} 
+            graphData={this.props.graphData} />
           </div>
         </div>
       );

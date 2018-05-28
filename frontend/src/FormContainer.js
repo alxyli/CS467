@@ -111,8 +111,6 @@ export class FormContainer extends Component {
     const webInputError = (website === '' && searchInitiated) ? (true) : (false);
     const searchLimitError = (sLimit === '' && searchInitiated) ? (true) : (false);
     const termInputError = (searchTerm === '' && searchInitiated && advancedOn) ? (true) : (false);
-
-    console.log(searchInitiated);
     
     const button = (isEmpty(this.props.graphData)) ? (
       <div className={styles.btnAnimate}>
