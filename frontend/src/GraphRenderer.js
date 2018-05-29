@@ -46,8 +46,7 @@ export class GraphRenderer extends React.Component {
 
       // set dead end node color
       if (value.deadend === 1) {
-        //color = '#ff2828'; // red
-        color = '#ff8000'; // orange
+        color = '#ff2828'; // red
       }
 
       // set found search term node color
