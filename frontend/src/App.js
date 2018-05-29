@@ -13,7 +13,9 @@ export class App extends Component {
             <div className={styles.bodyTwo}>
               <PageRouter />
             </div>
-            <footer> </footer>
+            <footer> 
+              <div className={styles.appFooter}></div>
+            </footer>
           </div>
 
     );

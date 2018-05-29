@@ -28,20 +28,31 @@ export class GraphRenderer extends React.Component {
       // also sets color of first node
       if (parentid === 0) {
         parentNode = value.id;
-        color = '#f5b041';
+        color = '#13ff00 '; // green
       }
 
       // sets color of last node
       else if (value.id === graphData.length) {
-        color = '#a569bd';
+        color = '#8700ff'; // purple
         parentNode = value.parentid;
       }
 
       // otherwise set parent node to parent id
-      // set all nodes in between start and end to the same color
+      // set intermediate node colors
       else {
         parentNode = value.parentid;
-        color = '#7fb3d5';
+        color = '#00e4ff'; // blue
+      }
+
+      // set dead end node color
+      if (value.deadend === 1) {
+        //color = '#ff2828'; // red
+        color = '#ff8000'; // orange
+      }
+
+      // set found search term node color
+      if (value.searchmatch === 1) {
+        color = '#ff8000'; // orange
       }
 
       let tempNode = {
@@ -54,8 +65,6 @@ export class GraphRenderer extends React.Component {
 
       sigmaGraphData.nodes.push(tempNode);
     });
-
-    console.log(sigmaGraphData);
   } 
 
   buildSigmaGraph(graphData) {
@@ -64,8 +73,6 @@ export class GraphRenderer extends React.Component {
   	var i = 0;
   	Object.keys(sigmaGraphData.nodes).forEach((nodes, idx) => {
   	
-  			console.log(idx);
-
   			let tempEdge = {
   				id: "e" + i++,
   				source: sigmaGraphData.nodes[idx].id,

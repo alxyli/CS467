@@ -44,3 +44,12 @@
   height:80vh;
   background: linear-gradient(to right, rgb(181, 183, 189), rgb(244, 245, 255));
 }
+
+.appFooter {
+  background-image: url("./legend.png");
+  background-size: 30%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
