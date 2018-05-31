@@ -100,7 +100,7 @@ export class PageRouter extends Component {
   
   render() {
     const graphData = this.state.graphData;
-
+    
     if (this.state.error) {
       return <p>{this.state.error.message}</p>;
     }
