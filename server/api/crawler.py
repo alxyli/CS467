@@ -204,6 +204,8 @@ def BFS_Search(URLList,targetdepth):
             #url":foundurl,"parenturl":url
             if (childurl.get('depth',None) == targetdepth) :
                 ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+                if (getSearchTermIsFound() == 1):
+                    return URLList
     BFS_Search(URLList,targetdepth+1)
     return URLList
 
@@ -286,7 +288,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
             if (foundurl != url):
                 URLList.append(urlrecord)
             if (found == 1):
-                break
+                return URLList #break
         setlastid(url_id)
     return URLList
 
