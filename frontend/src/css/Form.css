@@ -244,6 +244,21 @@ label {
     font-size: 14px;
 }
 
+.backBtn:hover {
+  background-color: rgb(26, 139, 11, 0.637);
+}
+
+.backBtnSelect {
+  background-color: #51a9e4;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
 .btnAnimate {
 padding-top: 8px;
 padding-left: 5px;
@@ -257,4 +272,19 @@ height: 40px;
   transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s; 
 }
 
+.btnBar {
+  padding-top: 1vh;
+  padding-left: 5px;
+  padding-bottom: 1vh;
+  height: 5vh;
+        border: none;
+        border-color: none;
+    left: 0px;
+    top: 0px;
+  transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 404px;
+  }
 

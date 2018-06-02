@@ -1,5 +1,6 @@
 import React from 'react'
-import {Sigma, RandomizeNodePositions, RelativeSize, NOverlap} from 'react-sigma';
+import {Sigma, RandomizeNodePositions, RelativeSize, NOverlap, ForceAtlas2} from 'react-sigma';
+import ForceLink from 'react-sigma/lib/ForceLink'
 import styles from './css/Form.css';
 
 var sigmaGraphData = {
@@ -11,7 +12,8 @@ export class GraphRenderer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { 
-			graphData: this.props.graphData,
+      graphData: this.props.graphData,
+      graphType: ""
 		};
 
 		this.buildSigmaGraph = this.buildSigmaGraph.bind(this);
@@ -90,21 +92,62 @@ export class GraphRenderer extends React.Component {
     this.props.backHandler();
   }
 
+  randomPositionHandler = () => {
+    if(this.state.graphType !== "Random")
+    {
+      sigmaGraphData = {
+        nodes: [],
+        edges: []
+      }
+      this.setState( {graphType: "Random"} );
+    }
+  }
+
+  forceDirectedHandler = () => {
+    if(this.state.graphType !== "")
+    {
+      sigmaGraphData = {
+        nodes: [],
+        edges: []
+      }
+      this.setState( {graphType: ""} );
+    }
+  }
+
 	render() {
-			return (
-				<div>
-					<Sigma graph={ this.buildSigmaGraph(this.state.graphData) } 
-          style={{height: "550px"}}
-          settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
-          onClickNode={e => window.open(e.data.node.label)}>
-          <RandomizeNodePositions />
-          <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
-          </Sigma>
-           <div className={styles.btnAnimate}>
-            <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button>
-           </div>
-				</div>
-			)
-		}
+
+    const RandomStyle = (this.state.graphType === "Random") ? 
+          (styles.backBtnSelect) : ( styles.backBtn );
+
+    const ForceStyle = (this.state.graphType === "") ? 
+          (styles.backBtnSelect) : ( styles.backBtn );
+
+    const buttonBar = (
+      <div className={styles.btnBar}>
+        <button className={styles.backBtn} onClick={this.backButtonHandler} >Back</button>
+        <button className={RandomStyle} onClick={this.randomPositionHandler} >Random Position</button>
+        <button className={ForceStyle} onClick={this.forceDirectedHandler} >Force Directed</button>
+      </div>
+    )
+
+    const SigmaProps = (this.state.graphType === "Random") ? (
+      <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
+    ) : (
+      <ForceLink background easing="cubicInOut"/>
+    );
+
+    return (
+      <div>
+        <Sigma graph={ this.buildSigmaGraph(this.state.graphData) } 
+        style={{height: "71vh", width: "90%", "margin-left":"auto", "margin-right":"auto" }}
+        settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
+        onClickNode={e => window.open(e.data.node.label)}>
+        <RandomizeNodePositions />
+        <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
+        </Sigma>
+        {buttonBar}
+      </div>
+    )
+  }
 }
 

@@ -70,6 +70,10 @@ export class PageRouter extends Component {
     this.setState({ queryData: dataIn, showInput: false });
   }
 
+  goToResults = () => {
+    this.setState({ hasLoaded: true });
+  }
+
   testFunc = () => {
     console.log("test123");
   }
@@ -141,7 +145,7 @@ export class PageRouter extends Component {
             ...defaultStyle,
             ...transitionStyles[status]
           }}>
-            <InputPage onQueryAPI={this.loadGraphResults} toResults={this.loadGraphResults} graphData={graphData}/>
+            <InputPage onQueryAPI={this.loadGraphResults} toResults={this.goToResults} graphData={graphData}/>
           </div>
         )}
       </Transition>
