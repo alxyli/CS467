@@ -13,6 +13,14 @@ const defaultStyle = {
   opacity: 0,
 }
 
+const loadingDuration = 1000;
+
+const defaultStyleLoading = {
+  transition: `opacity ${loadingDuration}ms ease-in-out`,
+  opacity: 0,
+}
+
+
 const transitionStyles = {
   entering: { opacity: 0 },
   entered:  { opacity: 1 },
@@ -111,11 +119,11 @@ export class PageRouter extends Component {
 
     if (this.state.isLoading) {
       return (
-        <Transition in={this.state.showLoading} timeout={duration} unmountOnExit appear
+        <Transition in={this.state.showLoading} timeout={loadingDuration} unmountOnExit appear
         onExited={this.loadingTransitionExit}>
         {(status) => (
           <div style={{
-            ...defaultStyle,
+            ...defaultStyleLoading,
             ...transitionStyles[status]
           }}>
             <LoadingAnimation />

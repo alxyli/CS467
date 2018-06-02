@@ -13,13 +13,20 @@ export class GraphRenderer extends React.Component {
 		super(props);
 		this.state = { 
       graphData: this.props.graphData,
-      graphType: ""
+      sigmaData: {},
+      graphType: "Random",
+      buildingGraph: true
 		};
 
 		this.buildSigmaGraph = this.buildSigmaGraph.bind(this);
 		this.buildSigmaNodes = this.buildSigmaNodes.bind(this);
     this.backButtonHandler = this.backButtonHandler.bind(this);
-	}
+  }
+  
+  componentDidMount(){
+    var tempSigmaData = this.buildSigmaGraph(this.state.graphData);
+    this.setState( { buildingGraph: false, sigmaData: tempSigmaData } )
+  }
 
 	buildSigmaNodes(graphData) {
     Object.entries(graphData).forEach(([key, value]) => {
@@ -95,10 +102,6 @@ export class GraphRenderer extends React.Component {
   randomPositionHandler = () => {
     if(this.state.graphType !== "Random")
     {
-      sigmaGraphData = {
-        nodes: [],
-        edges: []
-      }
       this.setState( {graphType: "Random"} );
     }
   }
@@ -106,10 +109,6 @@ export class GraphRenderer extends React.Component {
   forceDirectedHandler = () => {
     if(this.state.graphType !== "")
     {
-      sigmaGraphData = {
-        nodes: [],
-        edges: []
-      }
       this.setState( {graphType: ""} );
     }
   }
@@ -131,23 +130,36 @@ export class GraphRenderer extends React.Component {
     )
 
     const SigmaProps = (this.state.graphType === "Random") ? (
-      <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
+      <NOverlap background nodeMargin={20} gridSize={200} maxIterations={100} speed={75}
+      easing="cubicInOut" duration="1600" permittedExpansion="1.5"/>
     ) : (
-      <ForceLink background easing="cubicInOut"/>
+      <ForceLink background easing="cubicInOut" strongGravityMode="true" scalingRation="10"
+      outboundAttractionDistribution="true" iterationsPerRender="1" barnesHutOptimize="true"
+      slowDown="10" duration="2000"/>
     );
 
-    return (
-      <div>
-        <Sigma graph={ this.buildSigmaGraph(this.state.graphData) } 
-        style={{height: "71vh", width: "90%", "margin-left":"auto", "margin-right":"auto" }}
-        settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
-        onClickNode={e => window.open(e.data.node.label)}>
-        <RandomizeNodePositions />
-        <NOverlap nodeMargin={20} gridSize={200} maxIterations={100} speed={75}/>
-        </Sigma>
-        {buttonBar}
-      </div>
-    )
+    if(this.state.buildingGraph){
+      return (
+        <div>
+          Building Graph
+        </div>
+      )
+    }
+    
+    else {
+      return (
+        <div>
+          <Sigma graph={ this.state.sigmaData } 
+          style={{height: "71vh", width: "90%", "margin-left":"auto", "margin-right":"auto" }}
+          settings={{drawEdges: true, clone: false, batchEdgesDrawing: true, hideEdgesOnMove: true, labelThreshold: 14}} 
+          onClickNode={e => window.open(e.data.node.label)}>
+          <RandomizeNodePositions />
+          {SigmaProps}
+          </Sigma>
+          {buttonBar}
+        </div>
+      )
+    }
   }
 }
 
