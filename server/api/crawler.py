@@ -188,7 +188,7 @@ def api_URLFIND():
     #print("found this" + str(repeat))             
     return jsonify(results)
 def initList(URLList,url):
-    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0}
+    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0} 
     setlastid(1)
     URLList.append(urlrecord)
     global searchedURLs
