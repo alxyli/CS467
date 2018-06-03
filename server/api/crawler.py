@@ -16,7 +16,8 @@ from random import randint
 from sys import platform
 import logging 
 from fileinput import filename
-#from test.test_logging import LEVEL_RANGE 
+import time
+# from test.test_logging import LEVEL_RANGE 
 
 app = Flask(__name__)
 CORS(app)
@@ -25,20 +26,26 @@ isDFS = False
 searchTerm = "" 
 SearchTermIsFound = 0
 deadEnd = 0
-#repeat = 0 #for debugging
+abortTime = 0
+# repeat = 0 #for debugging
 searchedURLs = []
+ 
+
  
 @app.route('/')
 def api_root():
     return 'Welcome'
 
+
 def setdeadEnd(value):
     global deadEnd
     deadEnd = value
 
+
 def getdeadEnd():
     global deadEnd
     return  deadEnd 
+
 
 def setisDFS(value):
     global isDFS
@@ -47,46 +54,69 @@ def setisDFS(value):
     else:
         isDFS = False
 
+
 def getisDFS():
     global isDFS
     return  isDFS 
- 
-
-
 
  
+###########################
+def getAbortTime():
+    global abortTime  
+    return abortTime
+
+ 
+def setAbortTime(value):
+    global abortTime  
+    if (value > 0):
+        abort_after = value
+    else:
+        abort_after = 5 * 60
+    abortTime = time.time() + abort_after
+ 
+###########################
+
+
 def setsearchTerm(value):
     global searchTerm
     if isinstance(value, str):
         searchTerm = value
 
+
 def getsearchTerm():
     global searchTerm
     return  searchTerm 
+
   
 def setlastid(value):
     global lastid
     lastid = value
 
+
 def getlastid():
     global lastid
     return  lastid 
+
 
 def setSearchTermIsFound(value):
     global SearchTermIsFound
     SearchTermIsFound = value
 
+
 def getSearchTermIsFound():
     global SearchTermIsFound
     return  SearchTermIsFound 
+
   
 def setmaxdepth(value):
     global maxdepth
     maxdepth = value
 
+
 def getmaxdepth():
     global maxdepth
     return  maxdepth
+
 
 class MyClass(object):
 
@@ -96,8 +126,9 @@ class MyClass(object):
         '''
         Constructor
         '''
-#def addURL(self,parentURL,childURL):
+# def addURL(self,parentURL,childURL):
 #    self.urlList[parentURL].append(childURL)
+
      
 def simple_get(url):
     """
@@ -118,11 +149,14 @@ def simple_get(url):
         log_error('Error during requests to {0} : {1}'.format(url, str(e)))
         return None
 
+
 def is_Too_Many_Request_response(resp):
     """
     Returns true if the response is 429, indicating too many request to this server 
     """
     return (resp.status_code == 429) 
+
+
 def is_good_response(resp):
     """
     Returns true if the response seems to be HTML, false otherwise
@@ -141,7 +175,8 @@ def log_error(e):
     """
     print(e)        
 
-@app.route('/findurl',methods=['GET','POST'])
+
+@app.route('/findurl', methods=['GET', 'POST'])
 def api_URLFIND():
     
     if request.method == 'POST':
@@ -175,20 +210,23 @@ def api_URLFIND():
     setmaxdepth(depth)
     setsearchTerm(searchTerm)
     URLList = []
-    URLList = initList(URLList,url)     
+    setAbortTime(0)
+    URLList = initList(URLList, url)     
     
     setisDFS(dfs)
     if getisDFS():
-        urlRecord = ReadURLOnPage(url,1,1,URLList)
-        results = DFS_Search(urlRecord,1,URLList)
+        urlRecord = ReadURLOnPage(url, 1, 1, URLList)
+        results = DFS_Search(urlRecord, 1, URLList)
     else:
-        ReadURLOnPage(url,1,1,URLList)
-        results = BFS_Search(URLList,1) 
-    #global repeat #for debugging
-    #print("found this" + str(repeat))             
+        ReadURLOnPage(url, 1, 1, URLList)
+        results = BFS_Search(URLList, 1) 
+    # global repeat #for debugging
+    # print("found this" + str(repeat))             
     return jsonify(results)
-def initList(URLList,url):
-    urlrecord = {"id": 1,"url":url,"parenturl":url,"parentid":0,"depth":0,"searchmatch":0, "deadend":0} 
+
+
+def initList(URLList, url):
+    urlrecord = {"id": 1, "url":url, "parenturl":url, "parentid":0, "depth":0, "searchmatch":0, "deadend":0} 
     setlastid(1)
     URLList.append(urlrecord)
     global searchedURLs
@@ -197,30 +235,40 @@ def initList(URLList,url):
     setSearchTermIsFound(0)
     return URLList
 
-def BFS_Search(URLList,targetdepth):
-    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1))):
+
+def BFS_Search(URLList, targetdepth):
+    if ((targetdepth == getmaxdepth() or (getSearchTermIsFound() == 1))):
         return URLList
     for childurl in URLList:
-            #url":foundurl,"parenturl":url
-            if (childurl.get('depth',None) == targetdepth) :
-                ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+            # url":foundurl,"parenturl":url
+            if (getdeadEnd() == 1):
+                return URLList
+            if (childurl.get('depth', None) == targetdepth) :
+                ReadURLOnPage(childurl.get('url', None), childurl.get('id', None), targetdepth + 1, URLList)
                 if (getSearchTermIsFound() == 1):
                     return URLList
-    BFS_Search(URLList,targetdepth+1)
+    BFS_Search(URLList, targetdepth + 1)
     return URLList
 
-def DFS_Search(urlRecord,targetdepth,URLList):
-    if ((targetdepth==getmaxdepth() or (getSearchTermIsFound() == 1)) or (getdeadEnd() == 1)):  
+
+def DFS_Search(urlRecord, targetdepth, URLList):
+    if ((targetdepth == getmaxdepth() or (getSearchTermIsFound() == 1)) or (getdeadEnd() == 1)):  
         return URLList
-    if isinstance(urlRecord, dict): #TODO: Fix this code and get rid of this patch 
-        urlResult = ReadURLOnPage(urlRecord.get('url',None),urlRecord.get('id',None),targetdepth+1,URLList)
+    #if (getlastid() % 250 == 0):
+       # print(str(getAbortTime()))
+#        if (time().time() > getAbortTime()):
+ #           return URLList
+    if isinstance(urlRecord, dict):  # TODO: Fix this code and get rid of this patch 
+        urlResult = ReadURLOnPage(urlRecord.get('url', None), urlRecord.get('id', None), targetdepth + 1, URLList)
     else:
-        urlResult = ReadURLOnPage(urlRecord[0].get('url',None),urlRecord[0].get('id',None),targetdepth+1,URLList)
+        urlResult = ReadURLOnPage(urlRecord[0].get('url', None), urlRecord[0].get('id', None), targetdepth + 1, URLList)
     if urlResult is None:
-        return URLList #ended up in a dead-end, bail out for now  
-    DFS_Search(urlResult,targetdepth+1,URLList)
+        return URLList  # ended up in a dead-end, bail out for now  
+    DFS_Search(urlResult, targetdepth + 1, URLList)
     return URLList
-def searchThisPageForSearchWord(html,webpage):
+
+
+def searchThisPageForSearchWord(html, webpage):
     found = 0
     if (len(getsearchTerm()) > 0):
         
@@ -231,67 +279,80 @@ def searchThisPageForSearchWord(html,webpage):
             setSearchTermIsFound(1)   
     return found
 
-def handleDeadEnd(URLList,url):
+
+def handleDeadEnd(URLList, url,flag=1):
     if len(URLList) > 1:
         lastItem = URLList[-1]
     elif len(URLList) == 1:
         lastItem = URLList[0]
     else:    
-        initList(URLList,url)
+        initList(URLList, url)
         lastItem = URLList[0]
         
-    lastItem["deadend"] = 1
+    lastItem["deadend"] = flag
     newUrlList = URLList[:-1]
     newUrlList.append(lastItem)
     URLList = newUrlList
     setdeadEnd(1)
     return URLList
-def ReadURLOnPage(url,parentid,depth,URLList):
+
+
+def ReadURLOnPage(url, parentid, depth, URLList):
     if url is None:
         return
     if url in searchedURLs:
        # global repeat #for debugging
        # repeat = repeat + 1 #for debugging
         return URLList
+    
     searchedURLs.append(url)    
     raw_html = simple_get(url)
     if raw_html is None:
         return
     if raw_html == 429:
-        return handleDeadEnd(URLList,url)
+        return handleDeadEnd(URLList, url)
     html = BeautifulSoup(raw_html, 'html.parser')
- #found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/   
+ # found code below here: https://pythonspot.com/extract-links-from-webpage-beautifulsoup/   
     url_id = getlastid()
     htmlSearch = html.findAll('a', attrs={'href': re.compile("^http://|^https://")})
  
     if getisDFS():
         resultLen = len(htmlSearch)
         if (resultLen == 0):
-            return handleDeadEnd(URLList,url)
+            return handleDeadEnd(URLList, url)
         else:
-            randURLID = randint(0, resultLen-1)
+            randURLID = randint(0, resultLen - 1)
             htmlSearch = htmlSearch[randURLID]
             foundurl = htmlSearch.get('href')
-            if (foundurl == url): #url we found matches the parent, so bail out
-                return handleDeadEnd(URLList,url)
-            found = searchThisPageForSearchWord(html,foundurl)
+            if (foundurl == url):  # url we found matches the parent, so bail out
+                return handleDeadEnd(URLList, url)
+            found = searchThisPageForSearchWord(html, foundurl)
             url_id = url_id + 1
-            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth, "searchmatch":found,"deadend":0}
+            urlrecord = {"id": url_id, "url":foundurl, "parenturl":url, "parentid":parentid, "depth":depth, "searchmatch":found, "deadend":0}
             URLList.append(urlrecord)
             setlastid(url_id)
             return urlrecord
-    else: #BFS search
-        for link in  htmlSearch:#html.findAll('a', attrs={'href': re.compile("^http://")}):
+    else:  # BFS search
+        for link in  htmlSearch:  # html.findAll('a', attrs={'href': re.compile("^http://")}):
             foundurl = link.get('href')
-            found = searchThisPageForSearchWord(html,foundurl)
+            found = searchThisPageForSearchWord(html, foundurl)
             url_id = url_id + 1
-            urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found,"deadend":0}
+            urlrecord = {"id": url_id, "url":foundurl, "parenturl":url, "parentid":parentid, "depth":depth, "searchmatch":found, "deadend":0}
+            #print (foundurl + url)
+            #print (str(url_id))
+            
+            if (url_id % 250 == 0):
+                if (time.time() > getAbortTime()):
+                    handleDeadEnd(URLList, url,2)
+                    return URLList
+             
             if ((foundurl != url) or (parentid == 1)):
                 URLList.append(urlrecord)
             if (found == 1):
-                return URLList #break
+                return URLList  # break
         setlastid(url_id)
     return URLList
+
 
 @app.after_request
 def apply_caching(response):
@@ -299,11 +360,11 @@ def apply_caching(response):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
     return response
 
+
 if __name__ == "__main__":
-    logging.basicConfig(filename='crawler.log',level=logging.DEBUG)
+    logging.basicConfig(filename='crawler.log', level=logging.DEBUG)
     if platform == "linux" or platform == "linux2":
-        app.run(host= '172.31.22.173',port=5006)
+        app.run(host='172.31.22.173', port=5006)
     else:
-        app.run(host= '127.0.0.1',port=5006) 
-        
+        app.run(host='127.0.0.1', port=5006) 
     
