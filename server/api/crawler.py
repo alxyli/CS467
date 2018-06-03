@@ -217,12 +217,13 @@ def DFS_Search(urlRecord,targetdepth,URLList):
     else:
         urlResult = ReadURLOnPage(urlRecord[0].get('url',None),urlRecord[0].get('id',None),targetdepth+1,URLList)
     if urlResult is None:
-        return URLList #ended up in a dead-end, bail out for now   
+        return URLList #ended up in a dead-end, bail out for now  
     DFS_Search(urlResult,targetdepth+1,URLList)
     return URLList
 def searchThisPageForSearchWord(html,webpage):
     found = 0
     if (len(getsearchTerm()) > 0):
+        
         searchResults = html.findAll(text=re.compile(getsearchTerm()), limit=1)
         searchLen = len(searchResults)
         if searchLen > 0:
@@ -285,7 +286,7 @@ def ReadURLOnPage(url,parentid,depth,URLList):
             found = searchThisPageForSearchWord(html,foundurl)
             url_id = url_id + 1
             urlrecord = {"id": url_id,"url":foundurl,"parenturl":url,"parentid":parentid,"depth":depth,"searchmatch":found,"deadend":0}
-            if (foundurl != url):
+            if ((foundurl != url) or (parentid == 1)):
                 URLList.append(urlrecord)
             if (found == 1):
                 return URLList #break
