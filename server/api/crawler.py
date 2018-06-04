@@ -341,13 +341,13 @@ def ReadURLOnPage(url, parentid, depth, URLList):
             #print (foundurl + url)
             #print (str(url_id))
             
-            if (url_id % 250 == 0):
-                if (time.time() > getAbortTime()):
-                    handleDeadEnd(URLList, url,2)
-                    return URLList
              
             if ((foundurl != url) or (parentid == 1)):
                 URLList.append(urlrecord)
+            if (url_id % 250 == 0): #every 250 nodes, check to see if more than 5 minutes has elapsed. if it has, then end the search
+                if (time.time() > getAbortTime()) or (url_id >= 2000):  #end search after 2000 nodes. 2 team members ran test on multiple browsers and found 2000 to be the max threshold our graph could consistently render
+                    handleDeadEnd(URLList, url,2)
+                    return URLList
             if (found == 1):
                 return URLList  # break
         setlastid(url_id)
