@@ -1701,3 +1701,775 @@ Traceback (most recent call last):
 UnboundLocalError: local variable 'searchTerm' referenced before assignment
 73.162.189.46 - - [11/May/2018 04:58:35] "GET /findurl HTTP/1.1" 500 -
  * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbea03b70>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf195128>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbeec08d0>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to https://www.time.com : hostname 'www.time.com' doesn't match either of 'time.com', 'test.time.com', 'new.time.com', 'new-qa.time.com', 'new-dev.time.com', 'new.money.com', 'new-qa.money.com', 'new-dev.money.com', 'dev.time.com', 'qa.time.com'
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4506963272663169&mkt=en-US&setlang=en-US&w=qdLsOb3CBL87XXXx6aClQjG6XYwCLOUv&icp=1&.intl=us&sig=77XdfWkvqNFZ_LYyOjDxpA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4506963272663169&mkt=en-US&setlang=en-US&w=qdLsOb3CBL87XXXx6aClQjG6XYwCLOUv&icp=1&.intl=us&sig=77XdfWkvqNFZ_LYyOjDxpA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbda7e160>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4899202236220645&mkt=en-US&setlang=en-US&w=az4PSM05miOz5jc2cslS-D8q7nK9grqb&icp=1&.intl=us&sig=zQqJNEvHPDVFzcuCOUBqjA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4899202236220645&mkt=en-US&setlang=en-US&w=az4PSM05miOz5jc2cslS-D8q7nK9grqb&icp=1&.intl=us&sig=zQqJNEvHPDVFzcuCOUBqjA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf225f98>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4904897325957436&mkt=en-US&setlang=en-US&w=J4JwvdWtAa-2fQwnygh1Rn0Ll1W_g8e6&icp=1&.intl=us&sig=AxtdJa9ZhDW90fLw_Ge2sw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4904897325957436&mkt=en-US&setlang=en-US&w=J4JwvdWtAa-2fQwnygh1Rn0Ll1W_g8e6&icp=1&.intl=us&sig=AxtdJa9ZhDW90fLw_Ge2sw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd40c9b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=5020629516421527&mkt=en-US&setlang=en-US&w=Lu2WoH7wO9jrHnWf9f_KY_DHBJifyTaI&icp=1&.intl=us&sig=Mkhc1HIZ.7D_5veI9xnc0g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=5020629516421527&mkt=en-US&setlang=en-US&w=Lu2WoH7wO9jrHnWf9f_KY_DHBJifyTaI&icp=1&.intl=us&sig=Mkhc1HIZ.7D_5veI9xnc0g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf249828>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4888958686791027&mkt=en-US&setlang=en-US&w=2VuALF9pE8WvPb4WJKIHsG0lavD352dS&icp=1&.intl=us&sig=DBHLZ0TtdZAkpgVAd5MJJA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4888958686791027&mkt=en-US&setlang=en-US&w=2VuALF9pE8WvPb4WJKIHsG0lavD352dS&icp=1&.intl=us&sig=DBHLZ0TtdZAkpgVAd5MJJA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbdf49860>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4655054829914539&mkt=en-US&setlang=en-US&w=0km5qP5Y7tNE38ieH1qDLxFViFtSjK0G&icp=1&.intl=us&sig=RU7d1aIegSxelVl1rriYbw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4655054829914539&mkt=en-US&setlang=en-US&w=0km5qP5Y7tNE38ieH1qDLxFViFtSjK0G&icp=1&.intl=us&sig=RU7d1aIegSxelVl1rriYbw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd82fb00>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4634481966712298&mkt=en-US&setlang=en-US&w=FRU65W7z3NE7hL7eY2qt6PTL9nwcmhY7&icp=1&.intl=us&sig=QKX4J7xrOHk7NRBiwHxTLw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Kelly+Clarkson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Kelly+Clarkson&d=4634481966712298&mkt=en-US&setlang=en-US&w=FRU65W7z3NE7hL7eY2qt6PTL9nwcmhY7&icp=1&.intl=us&sig=QKX4J7xrOHk7NRBiwHxTLw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd8cba58>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://www.kellyclarkson.com/ : hostname 'www.kellyclarkson.com' doesn't match 'kellyclarkson.com'
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=5001985113590050&mkt=en-US&setlang=en-US&w=djD7tqMq3w7io-dbp2wuRPZgwydJEtWz&icp=1&.intl=us&sig=HYTqmonbGHNmqR2OReD3EQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=5001985113590050&mkt=en-US&setlang=en-US&w=djD7tqMq3w7io-dbp2wuRPZgwydJEtWz&icp=1&.intl=us&sig=HYTqmonbGHNmqR2OReD3EQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd620f98>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4840210831247336&mkt=en-US&setlang=en-US&w=BCRVq1UQidGZEty48tgQw3wDBg0-zo7O&icp=1&.intl=us&sig=VtJFXBX0HWFz9Qg6LhqWlw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4840210831247336&mkt=en-US&setlang=en-US&w=BCRVq1UQidGZEty48tgQw3wDBg0-zo7O&icp=1&.intl=us&sig=VtJFXBX0HWFz9Qg6LhqWlw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd347e80>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4739609839929691&mkt=en-US&setlang=en-US&w=OHIp5BUneShrU2kXevkylFp17A0eGeHY&icp=1&.intl=us&sig=AV9X1P6tqXH9aQK.D8AeiQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4739609839929691&mkt=en-US&setlang=en-US&w=OHIp5BUneShrU2kXevkylFp17A0eGeHY&icp=1&.intl=us&sig=AV9X1P6tqXH9aQK.D8AeiQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf2f0d68>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=286048849248&mkt=en-US&setlang=en-US&w=7NXsSs2resLs3W7BvmfrDEv1jk1JtIbx&icp=1&.intl=us&sig=kXeACvLEx93_6hJ06XLA_g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=286048849248&mkt=en-US&setlang=en-US&w=7NXsSs2resLs3W7BvmfrDEv1jk1JtIbx&icp=1&.intl=us&sig=kXeACvLEx93_6hJ06XLA_g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbdcba748>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4644381847061525&mkt=en-US&setlang=en-US&w=g1xP6y-00v5ABSwVTSPuxK01ZyQFMdUr&icp=1&.intl=us&sig=CEWEecd0X_DGBkMWIfQ7Fg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=4644381847061525&mkt=en-US&setlang=en-US&w=g1xP6y-00v5ABSwVTSPuxK01ZyQFMdUr&icp=1&.intl=us&sig=CEWEecd0X_DGBkMWIfQ7Fg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd347358>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=2209949593795&mkt=en-US&setlang=en-US&w=S_JZF10QwcTV8IcOwtrHsvhLfmdLo0jh&icp=1&.intl=us&sig=5tRGbr.7y5FdhngVcQth5w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Zazie+Beetz&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Zazie+Beetz&d=2209949593795&mkt=en-US&setlang=en-US&w=S_JZF10QwcTV8IcOwtrHsvhLfmdLo0jh&icp=1&.intl=us&sig=5tRGbr.7y5FdhngVcQth5w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd43d3c8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4527872318834091&mkt=en-US&setlang=en-US&w=CV15xNhdcrMLCa0QKcO69KloYvv_kGJ4&icp=1&.intl=us&sig=zOCQXKaWnx0xG4MfAGqC2g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4527872318834091&mkt=en-US&setlang=en-US&w=CV15xNhdcrMLCa0QKcO69KloYvv_kGJ4&icp=1&.intl=us&sig=zOCQXKaWnx0xG4MfAGqC2g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd8b8c50>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4559560543504906&mkt=en-US&setlang=en-US&w=1lpfqZi7brYZcvY0NrKfeAnfZw6idUPB&icp=1&.intl=us&sig=qZMF99sJouDNhqC7uEXAbQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4559560543504906&mkt=en-US&setlang=en-US&w=1lpfqZi7brYZcvY0NrKfeAnfZw6idUPB&icp=1&.intl=us&sig=qZMF99sJouDNhqC7uEXAbQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd3c8b70>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4935382996158080&mkt=en-US&setlang=en-US&w=HA_um9cAe2jEWkk-_GkYbTcJ9lKW4C-Q&icp=1&.intl=us&sig=PH7Xg.QnV3xDl9TQ61e2Rw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4935382996158080&mkt=en-US&setlang=en-US&w=HA_um9cAe2jEWkk-_GkYbTcJ9lKW4C-Q&icp=1&.intl=us&sig=PH7Xg.QnV3xDl9TQ61e2Rw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd284630>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4983280476225775&mkt=en-US&setlang=en-US&w=5UQc7SFoBFXaIgdaqlI7pEzmxKgbVb8a&icp=1&.intl=us&sig=iZLWjf8wFdXfGN1U6PSKuw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4983280476225775&mkt=en-US&setlang=en-US&w=5UQc7SFoBFXaIgdaqlI7pEzmxKgbVb8a&icp=1&.intl=us&sig=iZLWjf8wFdXfGN1U6PSKuw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbeb42438>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4985402197673179&mkt=en-US&setlang=en-US&w=aTJfmtZZaU_bGTQpJNzvZQEAGXYIrUqM&icp=1&.intl=us&sig=BHHFyeonOy578B4nPuA.jg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4985402197673179&mkt=en-US&setlang=en-US&w=aTJfmtZZaU_bGTQpJNzvZQEAGXYIrUqM&icp=1&.intl=us&sig=BHHFyeonOy578B4nPuA.jg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbee6f198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4760079678440126&mkt=en-US&setlang=en-US&w=wx55a0Rl-St0oiBsT9NdpoiZ8kexMhvb&icp=1&.intl=us&sig=aeywBPagmC0pm5eq7FANNg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4760079678440126&mkt=en-US&setlang=en-US&w=wx55a0Rl-St0oiBsT9NdpoiZ8kexMhvb&icp=1&.intl=us&sig=aeywBPagmC0pm5eq7FANNg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd557e48>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4887154880413903&mkt=en-US&setlang=en-US&w=z8FackoMr1eua4kfCESmvV9qxvRa9ntg&icp=1&.intl=us&sig=rVpPx7Ai17ni1u_zjSib2w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4887154880413903&mkt=en-US&setlang=en-US&w=z8FackoMr1eua4kfCESmvV9qxvRa9ntg&icp=1&.intl=us&sig=rVpPx7Ai17ni1u_zjSib2w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd39f5c0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4644970210396176&mkt=en-US&setlang=en-US&w=uD6IARGYsSxASdteRMIIjAfsV7Nd9-ww&icp=1&.intl=us&sig=zB87JIg4fBW5Qy5qNxAmoQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4644970210396176&mkt=en-US&setlang=en-US&w=uD6IARGYsSxASdteRMIIjAfsV7Nd9-ww&icp=1&.intl=us&sig=zB87JIg4fBW5Qy5qNxAmoQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd3ca160>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4922777263541378&mkt=en-US&setlang=en-US&w=mWI_Fa6vPbO-nvYk6birGooW6jzSfWd-&icp=1&.intl=us&sig=EZa95XqpQWKtBdUc8ZYETA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Anett+Kontaveit&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Anett+Kontaveit&d=4922777263541378&mkt=en-US&setlang=en-US&w=mWI_Fa6vPbO-nvYk6birGooW6jzSfWd-&icp=1&.intl=us&sig=EZa95XqpQWKtBdUc8ZYETA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd66a278>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4508947547553799&mkt=en-US&setlang=en-US&w=yKny2zg6jpwxFh6XVyXn3e0g0IL2FseQ&icp=1&.intl=us&sig=QYaGe2Z0iquxSNxVp3.nmg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4508947547553799&mkt=en-US&setlang=en-US&w=yKny2zg6jpwxFh6XVyXn3e0g0IL2FseQ&icp=1&.intl=us&sig=QYaGe2Z0iquxSNxVp3.nmg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd770080>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4648749842497807&mkt=en-US&setlang=en-US&w=mY6B98UTEFJCAYteJOYv5oZpnDc47HMP&icp=1&.intl=us&sig=c6tJJSmbE_coLoJXtTLmWA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4648749842497807&mkt=en-US&setlang=en-US&w=mY6B98UTEFJCAYteJOYv5oZpnDc47HMP&icp=1&.intl=us&sig=c6tJJSmbE_coLoJXtTLmWA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd19a748>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=5062380908709512&mkt=en-US&setlang=en-US&w=gm5rP9GbyTr-Gsmk-h8I66sdW5TFSc8j&icp=1&.intl=us&sig=U7ddhQ7q2Cd4sT0JmPpDbQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=5062380908709512&mkt=en-US&setlang=en-US&w=gm5rP9GbyTr-Gsmk-h8I66sdW5TFSc8j&icp=1&.intl=us&sig=U7ddhQ7q2Cd4sT0JmPpDbQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcfc82e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4545430109618592&mkt=en-US&setlang=en-US&w=FVaSm7yK35ATBZFKANDLYBmmYgcrRfLJ&icp=1&.intl=us&sig=lRlBj02kPN7kUo6QstjQ3A-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4545430109618592&mkt=en-US&setlang=en-US&w=FVaSm7yK35ATBZFKANDLYBmmYgcrRfLJ&icp=1&.intl=us&sig=lRlBj02kPN7kUo6QstjQ3A-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf0f4240>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4569640835416991&mkt=en-US&setlang=en-US&w=Od6OXVMebmEeCCdSvcVe7PITzwL2nS84&icp=1&.intl=us&sig=zNafBVhQEE3LigQGuH8.yg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4569640835416991&mkt=en-US&setlang=en-US&w=Od6OXVMebmEeCCdSvcVe7PITzwL2nS84&icp=1&.intl=us&sig=zNafBVhQEE3LigQGuH8.yg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd617710>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=5042611157599863&mkt=en-US&setlang=en-US&w=VwxoaOPCYvX1HUkt7e5qKZ3guHEEDgQA&icp=1&.intl=us&sig=n24dLeoKXtvbckNeo64KmQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=5042611157599863&mkt=en-US&setlang=en-US&w=VwxoaOPCYvX1HUkt7e5qKZ3guHEEDgQA&icp=1&.intl=us&sig=n24dLeoKXtvbckNeo64KmQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd30ac50>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4854315500242103&mkt=en-US&setlang=en-US&w=M3s-7ZMgli6ffLTZIFB4EIKZqh99XWsY&icp=1&.intl=us&sig=uBkWZncSzOyT.XTqqBf77g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4854315500242103&mkt=en-US&setlang=en-US&w=M3s-7ZMgli6ffLTZIFB4EIKZqh99XWsY&icp=1&.intl=us&sig=uBkWZncSzOyT.XTqqBf77g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd2e4be0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4559680809600202&mkt=en-US&setlang=en-US&w=yaUureZ1GlMZgKMkZ6NKzALOAvGEn3Zk&icp=1&.intl=us&sig=QtN0c6oK9v6lqq721HvW1Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4559680809600202&mkt=en-US&setlang=en-US&w=yaUureZ1GlMZgKMkZ6NKzALOAvGEn3Zk&icp=1&.intl=us&sig=QtN0c6oK9v6lqq721HvW1Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcebd278>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4747104569920091&mkt=en-US&setlang=en-US&w=7qOg0ypMYuRuu_kIXU0ljYDiyTwZoHxU&icp=1&.intl=us&sig=fv6ag0_FftIxXRjdAJ.klw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Janet+Jackson&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Janet+Jackson&d=4747104569920091&mkt=en-US&setlang=en-US&w=7qOg0ypMYuRuu_kIXU0ljYDiyTwZoHxU&icp=1&.intl=us&sig=fv6ag0_FftIxXRjdAJ.klw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbccab2b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4523667505153109&mkt=en-US&setlang=en-US&w=JvqJoIma25IJIDWnh4xD97PGAAfYnBqZ&icp=1&.intl=us&sig=v7l9_O2DQbJhEbl4y6qh0g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4523667505153109&mkt=en-US&setlang=en-US&w=JvqJoIma25IJIDWnh4xD97PGAAfYnBqZ&icp=1&.intl=us&sig=v7l9_O2DQbJhEbl4y6qh0g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcc6f9e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4758353097918594&mkt=en-US&setlang=en-US&w=-sBGHH-ZJ_Rz2V0BwWTngtmXd6wjuyge&icp=1&.intl=us&sig=YsrAgtwe4zbXQiJ7IBpWjg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4758353097918594&mkt=en-US&setlang=en-US&w=-sBGHH-ZJ_Rz2V0BwWTngtmXd6wjuyge&icp=1&.intl=us&sig=YsrAgtwe4zbXQiJ7IBpWjg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcc22278>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4593147167704389&mkt=en-US&setlang=en-US&w=EUzjbunj1zwouK3KHen4MgriGxf9YC32&icp=1&.intl=us&sig=AfBlNtj9LZ5QsaG_PDQsPw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4593147167704389&mkt=en-US&setlang=en-US&w=EUzjbunj1zwouK3KHen4MgriGxf9YC32&icp=1&.intl=us&sig=AfBlNtj9LZ5QsaG_PDQsPw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbce3c518>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4942804695715389&mkt=en-US&setlang=en-US&w=bgfSusCNxT7Huiu92Njbgz9uC0XYR6IZ&icp=1&.intl=us&sig=ddbyX3fghZ1ivmgzCUQ_bg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4942804695715389&mkt=en-US&setlang=en-US&w=bgfSusCNxT7Huiu92Njbgz9uC0XYR6IZ&icp=1&.intl=us&sig=ddbyX3fghZ1ivmgzCUQ_bg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbce82b38>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4525170741740975&mkt=en-US&setlang=en-US&w=qi8MQG1NWOsJzzwJHbQRCCTcVTsKpseV&icp=1&.intl=us&sig=zvPYOqKjfT1SwUfCucTY8Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4525170741740975&mkt=en-US&setlang=en-US&w=qi8MQG1NWOsJzzwJHbQRCCTcVTsKpseV&icp=1&.intl=us&sig=zvPYOqKjfT1SwUfCucTY8Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbc990b70>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=3653266907529&mkt=en-US&setlang=en-US&w=5qG01SPdRpoD-f4wzikDUFYNb7YRLBss&icp=1&.intl=us&sig=Wmmelr_vzp6u6fvtYBd84g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=3653266907529&mkt=en-US&setlang=en-US&w=5qG01SPdRpoD-f4wzikDUFYNb7YRLBss&icp=1&.intl=us&sig=Wmmelr_vzp6u6fvtYBd84g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbf0f4ac8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4525707622025011&mkt=en-US&setlang=en-US&w=JaH3sBvkha4KDb4Nv_XokaDUH6Vbgh0f&icp=1&.intl=us&sig=7_.ET1LUHrSWjxtpcn..cw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Andrea+Lee&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Andrea+Lee&d=4525707622025011&mkt=en-US&setlang=en-US&w=JaH3sBvkha4KDb4Nv_XokaDUH6Vbgh0f&icp=1&.intl=us&sig=7_.ET1LUHrSWjxtpcn..cw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd49bcc0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4993811764348995&mkt=en-US&setlang=en-US&w=ZSeF6jTAJzHe7GF5KRpoSMvYCmmAC7cc&icp=1&.intl=us&sig=lvtfq0I3ueZZAv6IB2TO9w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4993811764348995&mkt=en-US&setlang=en-US&w=ZSeF6jTAJzHe7GF5KRpoSMvYCmmAC7cc&icp=1&.intl=us&sig=lvtfq0I3ueZZAv6IB2TO9w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcc558d0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4791776478953571&mkt=en-US&setlang=en-US&w=qBvgFIKRTAmDDAJrmcHtPYxKu3u7pyPe&icp=1&.intl=us&sig=5C.0aRCr2PJGv3xICVQzIQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4791776478953571&mkt=en-US&setlang=en-US&w=qBvgFIKRTAmDDAJrmcHtPYxKu3u7pyPe&icp=1&.intl=us&sig=5C.0aRCr2PJGv3xICVQzIQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbce6f3c8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4774480702081828&mkt=en-US&setlang=en-US&w=Sk37LFz2YHd7LuTLKFI6o9UuRZ7xR08T&icp=1&.intl=us&sig=pjhxvIZoLEpPIPaPPHpYiQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4774480702081828&mkt=en-US&setlang=en-US&w=Sk37LFz2YHd7LuTLKFI6o9UuRZ7xR08T&icp=1&.intl=us&sig=pjhxvIZoLEpPIPaPPHpYiQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbc658a90>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4986510288225847&mkt=en-US&setlang=en-US&w=sCYb3e1LorzbmkaDkkWtsycJMESOtoZr&icp=1&.intl=us&sig=x8sYMbQ.FRmaBSTiz5QPHw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4986510288225847&mkt=en-US&setlang=en-US&w=sCYb3e1LorzbmkaDkkWtsycJMESOtoZr&icp=1&.intl=us&sig=x8sYMbQ.FRmaBSTiz5QPHw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbc9be390>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4548436581681739&mkt=en-US&setlang=en-US&w=L-S8MBIZlkUUY_xUxtKSY-DH2BxF0qst&icp=1&.intl=us&sig=ubKrd6CMatQsckf7BbOZSw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4548436581681739&mkt=en-US&setlang=en-US&w=L-S8MBIZlkUUY_xUxtKSY-DH2BxF0qst&icp=1&.intl=us&sig=ubKrd6CMatQsckf7BbOZSw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd25c208>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4749071643121371&mkt=en-US&setlang=en-US&w=Q9COjDgDjaFvoM0XlnoRvcXTRcJCra7V&icp=1&.intl=us&sig=onxw.ELCBgxl99C_n1DCFw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4749071643121371&mkt=en-US&setlang=en-US&w=Q9COjDgDjaFvoM0XlnoRvcXTRcJCra7V&icp=1&.intl=us&sig=onxw.ELCBgxl99C_n1DCFw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbc5a1ac8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4624801095354480&mkt=en-US&setlang=en-US&w=Gv5b5TBZ4tA3HejUbwFDhw7C78M_vcae&icp=1&.intl=us&sig=QykrClfpE7PKCIuy8orf1w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4624801095354480&mkt=en-US&setlang=en-US&w=Gv5b5TBZ4tA3HejUbwFDhw7C78M_vcae&icp=1&.intl=us&sig=QykrClfpE7PKCIuy8orf1w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd580470>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4527683319956774&mkt=en-US&setlang=en-US&w=kQL89CrMVUwK87jfnkAoCwClCQZJOcX_&icp=1&.intl=us&sig=pMsSVYKlakSSqWo7O.xGSA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Ford+Escape&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Ford+Escape&d=4527683319956774&mkt=en-US&setlang=en-US&w=kQL89CrMVUwK87jfnkAoCwClCQZJOcX_&icp=1&.intl=us&sig=pMsSVYKlakSSqWo7O.xGSA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd1d3dd8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4785870948271604&mkt=en-US&setlang=en-US&w=sHMJHCaol8eAXLRztYmcN_DHBssGvi4G&icp=1&.intl=us&sig=aYrfsDRlL_3BG3pz4CN5nQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4785870948271604&mkt=en-US&setlang=en-US&w=sHMJHCaol8eAXLRztYmcN_DHBssGvi4G&icp=1&.intl=us&sig=aYrfsDRlL_3BG3pz4CN5nQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcbf5dd8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4892892944138976&mkt=en-US&setlang=en-US&w=34DnL5s4IeaxB6DjtmKdSKovI21Isiux&icp=1&.intl=us&sig=b158dZ5xURCom_ZZMw9gmQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4892892944138976&mkt=en-US&setlang=en-US&w=34DnL5s4IeaxB6DjtmKdSKovI21Isiux&icp=1&.intl=us&sig=b158dZ5xURCom_ZZMw9gmQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcd64710>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4885144799547357&mkt=en-US&setlang=en-US&w=zafiBDH_iKetgfqc7zeewd-IBgAFYKsa&icp=1&.intl=us&sig=iG7KPqsPOb99UksR_Q.Qcg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4885144799547357&mkt=en-US&setlang=en-US&w=zafiBDH_iKetgfqc7zeewd-IBgAFYKsa&icp=1&.intl=us&sig=iG7KPqsPOb99UksR_Q.Qcg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcd39eb8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4682783140683324&mkt=en-US&setlang=en-US&w=Sf6i5ntjLoxRe-2Mm9uduy0RJ_LMtJnS&icp=1&.intl=us&sig=RxJKLCE_aYMvflA8_5yjnQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4682783140683324&mkt=en-US&setlang=en-US&w=Sf6i5ntjLoxRe-2Mm9uduy0RJ_LMtJnS&icp=1&.intl=us&sig=RxJKLCE_aYMvflA8_5yjnQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbcfea9e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4937281394251856&mkt=en-US&setlang=en-US&w=tKgHNBoudgfFN05NeAOaCes7cDstqBD4&icp=1&.intl=us&sig=feMfv9ZeSFHG34zg9uTMSA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Victoria+Aitken&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Victoria+Aitken&d=4937281394251856&mkt=en-US&setlang=en-US&w=tKgHNBoudgfFN05NeAOaCes7cDstqBD4&icp=1&.intl=us&sig=feMfv9ZeSFHG34zg9uTMSA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7fbbbd204f98>: Failed to establish a new connection: [Errno 110] Connection timed out',)) * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+104.185.157.36 - - [21/May/2018 02:07:17] "GET / HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:08:35] "GET / HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:26:19] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:39:21] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:39:47] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:40:05] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:40:25] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:44:39] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [21/May/2018 02:44:42] "POST /findurl HTTP/1.1" 200 -
+185.222.209.39 - - [21/May/2018 10:46:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.209.39 - - [21/May/2018 10:46:30] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+185.222.209.39 - - [21/May/2018 11:10:04] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.209.39 - - [21/May/2018 11:10:04] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+185.222.209.39 - - [21/May/2018 11:19:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.222.209.39 - - [21/May/2018 11:19:23] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+104.185.157.36 - - [22/May/2018 02:20:42] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [22/May/2018 02:21:09] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [22/May/2018 02:21:56] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+104.185.157.36 - - [23/May/2018 02:32:26] "GET / HTTP/1.1" 200 -
+104.185.157.36 - - [23/May/2018 02:32:26] "GET /favicon.ico HTTP/1.1" 404 -
+ * Running on http://172.31.22.173:5002/ (Press CTRL+C to quit)
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+104.185.157.36 - - [23/May/2018 03:28:36] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:00:26] "OPTIONS /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:00:27] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:01:47] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:04:49] "OPTIONS /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:04:49] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:05:32] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:05:44] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:05:55] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:09:13] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+65.204.229.13 - - [24/May/2018 00:18:25] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:18:40] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:18:56] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 00:19:01] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 01:46:42] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 01:48:30] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+65.204.229.13 - - [24/May/2018 02:26:22] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 02:26:41] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 02:30:26] "POST /findurl HTTP/1.1" 200 -
+65.204.229.13 - - [24/May/2018 02:44:57] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+65.204.229.13 - - [24/May/2018 03:17:22] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+65.204.229.13 - - [24/May/2018 03:19:51] "POST /findurl HTTP/1.1" 200 -
+[2018-05-24 03:24:18,921] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 165, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+35.153.127.83 - - [24/May/2018 03:24:18] "GET /findurl HTTP/1.1" 500 -
+[2018-05-24 03:24:18,928] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 165, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+34.227.78.61 - - [24/May/2018 03:24:18] "GET /findurl HTTP/1.1" 500 -
+[2018-05-24 05:01:37,382] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 165, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [24/May/2018 05:01:37] "GET /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [24/May/2018 05:01:37] "GET /favicon.ico HTTP/1.1" 404 -
+73.162.189.46 - - [24/May/2018 05:01:37] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-05-24 05:01:38,620] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 165, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+73.162.189.46 - - [24/May/2018 05:01:38] "GET /findurl HTTP/1.1" 500 -
+73.162.189.46 - - [24/May/2018 08:30:31] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:30:32] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:31:52] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:31:53] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:33:33] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:33:33] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:34:32] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:34:33] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:34:50] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:36:14] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:40:58] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:42:21] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:48:04] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:48:04] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:50:34] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:50:34] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:59:55] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 08:59:55] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:00:15] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:00:15] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:04:23] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:05:51] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:11:54] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:11:55] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:13:09] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:14:31] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:26:19] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:26:20] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:32:27] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:32:28] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:25] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:25] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:36] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:37] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:58] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:34:58] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:35:24] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:35:24] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:35:41] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:35:41] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:36:13] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:36:13] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:42:06] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:42:07] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:44:27] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:44:28] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:47:20] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:47:20] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:47:28] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:47:29] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:49:02] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:49:02] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:50:39] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:50:39] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:34] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:34] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:44] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:44] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:51] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:52:52] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:53:15] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:53:16] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:53:45] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:53:46] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:54:38] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:55:59] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:58:28] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:58:29] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 09:58:38] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:00:00] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:01:34] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:01:35] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:05] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:05] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:24] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:25] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:43] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:02:44] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:05] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:05] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:15] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:16] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:55] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:03:55] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:08:13] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 10:08:14] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:42:35] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:42:36] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:42:51] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:44:12] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:46:47] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:46:48] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:49:52] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:49:53] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:50:38] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 19:50:38] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 21:49:16] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 21:49:16] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 21:50:24] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 21:50:25] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 22:11:26] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 22:11:27] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 22:11:41] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 22:11:42] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 23:18:49] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 23:18:49] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:42:48] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:42:49] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:33] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:33] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:40] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:42] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:48] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:49] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:54] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:44:54] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:45:07] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:45:07] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:45:16] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:45:27] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:47:01] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:47:01] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 23:50:19] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [24/May/2018 23:50:19] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:51:34] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:51:35] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:51:55] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:51:56] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:52:47] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:52:47] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:56:05] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [24/May/2018 23:56:05] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:01:33] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:01:34] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:01:53] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:01:53] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:02:10] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:02:11] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:02:46] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:02:46] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [25/May/2018 00:02:59] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:03] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:03] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:15] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:16] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:25] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:03:26] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:07:13] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:07:14] "POST /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:15:01] "OPTIONS /findurl HTTP/1.1" 200 -
+73.162.189.46 - - [25/May/2018 00:15:01] "POST /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [25/May/2018 00:15:38] "OPTIONS /findurl HTTP/1.1" 200 -
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab25cba8>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab4970f0>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab4e8ba8>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaeb5400>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to  <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button> : Invalid URL ' <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button>': No schema supplied. Perhaps you meant http:// <button className={styles.backBtn} onClick={this.backButtonHandler} type="button" >Back</button>?
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa8646d8>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa9a4940>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa84a438>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa901588>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaf38ef0>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://careers.yahoo.com/us : HTTPConnectionPool(host='careers.yahoo.com', port=80): Max retries exceeded with url: /us (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaa45470>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to https://careers.yahoo.com/us/ : HTTPSConnectionPool(host='careers.yahoo.com', port=443): Max retries exceeded with url: /us/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f00aab049e8>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to https://careers.yahoo.com/us/ : HTTPSConnectionPool(host='careers.yahoo.com', port=443): Max retries exceeded with url: /us/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f00aa6e6f98>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to https://careers.yahoo.com/us/ : HTTPSConnectionPool(host='careers.yahoo.com', port=443): Max retries exceeded with url: /us/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f00aa50f898>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to https://careers.yahoo.com/us/ : HTTPSConnectionPool(host='careers.yahoo.com', port=443): Max retries exceeded with url: /us/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f00aa2f62e8>: Failed to establish a new connection: [Errno -5] No address associated with hostname',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4937165422987881&mkt=en-US&setlang=en-US&w=XEWioBzMScDFKf4OqPsX1XQg1WNLP0Di&icp=1&.intl=us&sig=UI3Qr4bLbzHBSqfOOQqIig-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4937165422987881&mkt=en-US&setlang=en-US&w=XEWioBzMScDFKf4OqPsX1XQg1WNLP0Di&icp=1&.intl=us&sig=UI3Qr4bLbzHBSqfOOQqIig-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a99d29e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4733004195759774&mkt=en-US&setlang=en-US&w=ywtQqrKncn1oUkz7qo7RF_XHwOl2PdDA&icp=1&.intl=us&sig=Cm_bxldKvu2hetGmI_3rSw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4733004195759774&mkt=en-US&setlang=en-US&w=ywtQqrKncn1oUkz7qo7RF_XHwOl2PdDA&icp=1&.intl=us&sig=Cm_bxldKvu2hetGmI_3rSw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a969a828>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4981657026167988&mkt=en-US&setlang=en-US&w=lBpXW8niH0XZZSN2blHVBbWFAdXJ8YGi&icp=1&.intl=us&sig=0AWnMWoVvJILLULbe1Xxkg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4981657026167988&mkt=en-US&setlang=en-US&w=lBpXW8niH0XZZSN2blHVBbWFAdXJ8YGi&icp=1&.intl=us&sig=0AWnMWoVvJILLULbe1Xxkg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa5c3710>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=355112351589&mkt=en-US&setlang=en-US&w=QAPUGKYUdT6ByYbCr5hgwmE4eNXDv64S&icp=1&.intl=us&sig=SkNT6BjiJW1eJKzmHumVgQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=355112351589&mkt=en-US&setlang=en-US&w=QAPUGKYUdT6ByYbCr5hgwmE4eNXDv64S&icp=1&.intl=us&sig=SkNT6BjiJW1eJKzmHumVgQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaea4240>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4877426765989560&mkt=en-US&setlang=en-US&w=jN6hM2WyK9ep_ztjYtrws_jBnvQJjHhL&icp=1&.intl=us&sig=AzhXNzJrxJDL7e7FluCduA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=4877426765989560&mkt=en-US&setlang=en-US&w=jN6hM2WyK9ep_ztjYtrws_jBnvQJjHhL&icp=1&.intl=us&sig=AzhXNzJrxJDL7e7FluCduA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab066e80>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=2966345703186&mkt=en-US&setlang=en-US&w=dPHvbNtojgIYyI5q1zveoAgZwQNtalDp&icp=1&.intl=us&sig=cUqYu_SyUfnj6AqmQNVwmw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Portnoy%27s+Complaint&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Portnoy%27s+Complaint&d=2966345703186&mkt=en-US&setlang=en-US&w=dPHvbNtojgIYyI5q1zveoAgZwQNtalDp&icp=1&.intl=us&sig=cUqYu_SyUfnj6AqmQNVwmw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab47a438>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4611357857744358&mkt=en-US&setlang=en-US&w=F-OZE1P3oqwxAMgoVBTO-lgdvHTmoWMF&icp=1&.intl=us&sig=OVb17j.Yp.s.P1uMAXjGiw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4611357857744358&mkt=en-US&setlang=en-US&w=F-OZE1P3oqwxAMgoVBTO-lgdvHTmoWMF&icp=1&.intl=us&sig=OVb17j.Yp.s.P1uMAXjGiw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9661208>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4604206714324282&mkt=en-US&setlang=en-US&w=fIUj0L7T6REtwETuSR1KKG4UIJMT1XaE&icp=1&.intl=us&sig=zuI3UbjNTPXHecbMy3JK.A-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4604206714324282&mkt=en-US&setlang=en-US&w=fIUj0L7T6REtwETuSR1KKG4UIJMT1XaE&icp=1&.intl=us&sig=zuI3UbjNTPXHecbMy3JK.A-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9868438>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4620304261972043&mkt=en-US&setlang=en-US&w=Gb1PbmGrKTM1EgKDPBaFwWp1RcIOmtKJ&icp=1&.intl=us&sig=OhdIqkhsF16pmC01iD0OPQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4620304261972043&mkt=en-US&setlang=en-US&w=Gb1PbmGrKTM1EgKDPBaFwWp1RcIOmtKJ&icp=1&.intl=us&sig=OhdIqkhsF16pmC01iD0OPQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa7e87b8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4979939011398004&mkt=en-US&setlang=en-US&w=cKc1_1-8StXYnUmi8FI1ezXq_PJRCq6-&icp=1&.intl=us&sig=ac8sJy7BN2Bo89J8ZNtQUQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4979939011398004&mkt=en-US&setlang=en-US&w=cKc1_1-8StXYnUmi8FI1ezXq_PJRCq6-&icp=1&.intl=us&sig=ac8sJy7BN2Bo89J8ZNtQUQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9b466d8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4857257577548207&mkt=en-US&setlang=en-US&w=EtDwZL3O3xWg03PVMhaV0x4jWBP1de0d&icp=1&.intl=us&sig=BpLB1xiYWs95WvjUmj0P6Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4857257577548207&mkt=en-US&setlang=en-US&w=EtDwZL3O3xWg03PVMhaV0x4jWBP1de0d&icp=1&.intl=us&sig=BpLB1xiYWs95WvjUmj0P6Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9578518>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4517212181432082&mkt=en-US&setlang=en-US&w=CUEOcrypy7sGMNPr57tYOXitXaQESodL&icp=1&.intl=us&sig=8Wctrc2sKTEKImhCgz8coA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4517212181432082&mkt=en-US&setlang=en-US&w=CUEOcrypy7sGMNPr57tYOXitXaQESodL&icp=1&.intl=us&sig=8Wctrc2sKTEKImhCgz8coA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab3a58d0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4811589205624460&mkt=en-US&setlang=en-US&w=gk3-ftqKGUqMDtLzKWdE-T8BGTYM1D4f&icp=1&.intl=us&sig=K6chOqa4W7p2Y62IFwZ8WA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4811589205624460&mkt=en-US&setlang=en-US&w=gk3-ftqKGUqMDtLzKWdE-T8BGTYM1D4f&icp=1&.intl=us&sig=K6chOqa4W7p2Y62IFwZ8WA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa34cac8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4868991440650656&mkt=en-US&setlang=en-US&w=zPn-Rv2D2s2mKREmYAeeDHhX5onXlsr_&icp=1&.intl=us&sig=.k7tZxULxz6gCuSVDqum1g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4868991440650656&mkt=en-US&setlang=en-US&w=zPn-Rv2D2s2mKREmYAeeDHhX5onXlsr_&icp=1&.intl=us&sig=.k7tZxULxz6gCuSVDqum1g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aa77f9e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4772565158199879&mkt=en-US&setlang=en-US&w=DAXpYGuCNWB6T5oFgPnqiQTP5r9PCljh&icp=1&.intl=us&sig=U5lWlYEiEo0akG2kf._RcQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Christina+Aguilera&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Christina+Aguilera&d=4772565158199879&mkt=en-US&setlang=en-US&w=DAXpYGuCNWB6T5oFgPnqiQTP5r9PCljh&icp=1&.intl=us&sig=U5lWlYEiEo0akG2kf._RcQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9e47198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4708342485024903&mkt=en-US&setlang=en-US&w=TnbhBmzNSVZdGwTf5ECGflGJLmSnL-NN&icp=1&.intl=us&sig=Kvb4TQhO1mZXhMjboz1.mg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4708342485024903&mkt=en-US&setlang=en-US&w=TnbhBmzNSVZdGwTf5ECGflGJLmSnL-NN&icp=1&.intl=us&sig=Kvb4TQhO1mZXhMjboz1.mg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a90aa668>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4754006591079731&mkt=en-US&setlang=en-US&w=FIl3X-GRpBdx3zWJ9FxAORY9fF2IJwG3&icp=1&.intl=us&sig=fj37AL4O.GdPEnpnKqXz3Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4754006591079731&mkt=en-US&setlang=en-US&w=FIl3X-GRpBdx3zWJ9FxAORY9fF2IJwG3&icp=1&.intl=us&sig=fj37AL4O.GdPEnpnKqXz3Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaa40b70>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4792927589499961&mkt=en-US&setlang=en-US&w=mV0GN1BFwBuDkjWuZ2ylKCu-MbcwMU6h&icp=1&.intl=us&sig=NCkVRjsSZfU0I4rA4sNKIA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4792927589499961&mkt=en-US&setlang=en-US&w=mV0GN1BFwBuDkjWuZ2ylKCu-MbcwMU6h&icp=1&.intl=us&sig=NCkVRjsSZfU0I4rA4sNKIA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab16a630>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4620969953273818&mkt=en-US&setlang=en-US&w=R-1f3KJaS141X_7Qx2JugbTfgh43fQ40&icp=1&.intl=us&sig=f1IpvFWMxoXVUXHE8eg9vA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4620969953273818&mkt=en-US&setlang=en-US&w=R-1f3KJaS141X_7Qx2JugbTfgh43fQ40&icp=1&.intl=us&sig=f1IpvFWMxoXVUXHE8eg9vA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a97376d8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4849045615020398&mkt=en-US&setlang=en-US&w=hva2OzjlCmWdF2KvcDUxGG3I8hHydV5-&icp=1&.intl=us&sig=OuBD07YjYKHSoOrxadt4ww-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4849045615020398&mkt=en-US&setlang=en-US&w=hva2OzjlCmWdF2KvcDUxGG3I8hHydV5-&icp=1&.intl=us&sig=OuBD07YjYKHSoOrxadt4ww-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9da1278>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4792330587406987&mkt=en-US&setlang=en-US&w=8KT36d-tbjqDTJwLTGdODsp5DPPPjnGy&icp=1&.intl=us&sig=4NQsvJMwI_1gTgTmy6Dj_w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4792330587406987&mkt=en-US&setlang=en-US&w=8KT36d-tbjqDTJwLTGdODsp5DPPPjnGy&icp=1&.intl=us&sig=4NQsvJMwI_1gTgTmy6Dj_w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab437198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4535255325016126&mkt=en-US&setlang=en-US&w=1sgFZWQqEwQOZQEwkVXkEbX5-RTscObb&icp=1&.intl=us&sig=rEk2wmFmH2IoRQSIv8vHaw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4535255325016126&mkt=en-US&setlang=en-US&w=1sgFZWQqEwQOZQEwkVXkEbX5-RTscObb&icp=1&.intl=us&sig=rEk2wmFmH2IoRQSIv8vHaw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9741a90>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4605946169723670&mkt=en-US&setlang=en-US&w=CoeRwruKmskuivStG2h2Ic8VX8iyCMsK&icp=1&.intl=us&sig=wzWVLUlUyVh3LqH.GDl8iw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Allison+Mack&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Allison+Mack&d=4605946169723670&mkt=en-US&setlang=en-US&w=CoeRwruKmskuivStG2h2Ic8VX8iyCMsK&icp=1&.intl=us&sig=wzWVLUlUyVh3LqH.GDl8iw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a97a8c88>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to https://search.yahoo.com/search?p=nxivm&ei=UTF-8&fr2=rs-bottom%2Cp%3As%2Cv%3Aw%2Cm%3Aat-s&fr=fp-tts : ('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4983619795551486&mkt=en-US&setlang=en-US&w=MnjNPOzeYGfaScGwGJmS_EjxYTHP-oHd&icp=1&.intl=us&sig=T.oOQlBY3kXhIZNQ4leYOQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4983619795551486&mkt=en-US&setlang=en-US&w=MnjNPOzeYGfaScGwGJmS_EjxYTHP-oHd&icp=1&.intl=us&sig=T.oOQlBY3kXhIZNQ4leYOQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a91c9198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4828734734796567&mkt=en-US&setlang=en-US&w=fH2zEUkY8m6T2tsJW_0-lZ_ubRJhu-Ju&icp=1&.intl=us&sig=ux5I4fnxOchKr2XUxIRhxQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4828734734796567&mkt=en-US&setlang=en-US&w=fH2zEUkY8m6T2tsJW_0-lZ_ubRJhu-Ju&icp=1&.intl=us&sig=ux5I4fnxOchKr2XUxIRhxQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a94d3208>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4526472144160260&mkt=en-US&setlang=en-US&w=jmIbMdcIJYAKZsj2gIP5ZzHXo8XHl2n_&icp=1&.intl=us&sig=_2USTcI9z.C2f.MA6RELAA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4526472144160260&mkt=en-US&setlang=en-US&w=jmIbMdcIJYAKZsj2gIP5ZzHXo8XHl2n_&icp=1&.intl=us&sig=_2USTcI9z.C2f.MA6RELAA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8f0e080>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4812963596403979&mkt=en-US&setlang=en-US&w=3iaJO6_eo7OMrrqj_ohRGsN2Ol31Jt_F&icp=1&.intl=us&sig=gwvgqSfn0fCds2XV2y5Luw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4812963596403979&mkt=en-US&setlang=en-US&w=3iaJO6_eo7OMrrqj_ohRGsN2Ol31Jt_F&icp=1&.intl=us&sig=gwvgqSfn0fCds2XV2y5Luw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a94899e8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4730143729517045&mkt=en-US&setlang=en-US&w=mlJGJTsOiahnBRdB9mcKHZfE9uo1Fu7u&icp=1&.intl=us&sig=lXs2wiPbqqaQoafiRj6bww-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4730143729517045&mkt=en-US&setlang=en-US&w=mlJGJTsOiahnBRdB9mcKHZfE9uo1Fu7u&icp=1&.intl=us&sig=lXs2wiPbqqaQoafiRj6bww-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a932c6a0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4956492803672004&mkt=en-US&setlang=en-US&w=q5jGx5ryANzN892K4hPQO3yO8A2x3t3A&icp=1&.intl=us&sig=hPh9tfeoECfvrKFlFVUSgQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4956492803672004&mkt=en-US&setlang=en-US&w=q5jGx5ryANzN892K4hPQO3yO8A2x3t3A&icp=1&.intl=us&sig=hPh9tfeoECfvrKFlFVUSgQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9078ba8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4650807128687968&mkt=en-US&setlang=en-US&w=xp2nzQBfiPpC8S6iWvXJYzk01Na3t-9_&icp=1&.intl=us&sig=nEMIX1OoGNxxGmJPzqK.bg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=4650807128687968&mkt=en-US&setlang=en-US&w=xp2nzQBfiPpC8S6iWvXJYzk01Na3t-9_&icp=1&.intl=us&sig=nEMIX1OoGNxxGmJPzqK.bg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8f647b8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=5001980806630930&mkt=en-US&setlang=en-US&w=J_sBVMzw_D3io298ihR2pv3fPeZYjQBj&icp=1&.intl=us&sig=hmJiJTJRrG.ZeW5UPogsDg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=5001980806630930&mkt=en-US&setlang=en-US&w=J_sBVMzw_D3io298ihR2pv3fPeZYjQBj&icp=1&.intl=us&sig=hmJiJTJRrG.ZeW5UPogsDg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a997acf8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=217609312657&mkt=en-US&setlang=en-US&w=sPVRNp8LzonM7MInDByGPkY0_hdxrqnz&icp=1&.intl=us&sig=huptAZeFx.hz9Nxwc8AJow-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Katy+Perry&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Katy+Perry&d=217609312657&mkt=en-US&setlang=en-US&w=sPVRNp8LzonM7MInDByGPkY0_hdxrqnz&icp=1&.intl=us&sig=huptAZeFx.hz9Nxwc8AJow-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9706898>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4903969624097480&mkt=en-US&setlang=en-US&w=QcRCEDjhEqC2ERRMLFI6H5jPZSE0Fc2s&icp=1&.intl=us&sig=WsqVQ2ZqXqMTId_lZkxrXQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4903969624097480&mkt=en-US&setlang=en-US&w=QcRCEDjhEqC2ERRMLFI6H5jPZSE0Fc2s&icp=1&.intl=us&sig=WsqVQ2ZqXqMTId_lZkxrXQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a90f49b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4781258163683786&mkt=en-US&setlang=en-US&w=Xg9ckWzFCK9-Q5VlaHE_wF8NBhsx1U8U&icp=1&.intl=us&sig=DlVYimWc5E9NprH0SFAcUQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4781258163683786&mkt=en-US&setlang=en-US&w=Xg9ckWzFCK9-Q5VlaHE_wF8NBhsx1U8U&icp=1&.intl=us&sig=DlVYimWc5E9NprH0SFAcUQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9276198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4667832363322541&mkt=en-US&setlang=en-US&w=i8hAY3rF6RJKr3KKErMQNtXk807nH9zQ&icp=1&.intl=us&sig=7xBluEQ5xR9413n_errONg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4667832363322541&mkt=en-US&setlang=en-US&w=i8hAY3rF6RJKr3KKErMQNtXk807nH9zQ&icp=1&.intl=us&sig=7xBluEQ5xR9413n_errONg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8cf0588>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4740507490454227&mkt=en-US&setlang=en-US&w=0-_PoL8lHbVru9I2FOKuDZ_Q9kApjr9e&icp=1&.intl=us&sig=uWd9fba0kREGnWSUusE3Qw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4740507490454227&mkt=en-US&setlang=en-US&w=0-_PoL8lHbVru9I2FOKuDZ_Q9kApjr9e&icp=1&.intl=us&sig=uWd9fba0kREGnWSUusE3Qw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8d44c18>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4691867008041905&mkt=en-US&setlang=en-US&w=eImaHGVsbnhVnSnqOvnA0xoamMb6RAf5&icp=1&.intl=us&sig=07fZadFns1CSF9rKdOCPHg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4691867008041905&mkt=en-US&setlang=en-US&w=eImaHGVsbnhVnSnqOvnA0xoamMb6RAf5&icp=1&.intl=us&sig=07fZadFns1CSF9rKdOCPHg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8c78710>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4970661891998398&mkt=en-US&setlang=en-US&w=341vg4xadArUZRMbQ0AM5Wrppe2QjpGy&icp=1&.intl=us&sig=IZTPDXRF2rQUkOxFchvFkA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4970661891998398&mkt=en-US&setlang=en-US&w=341vg4xadArUZRMbQ0AM5Wrppe2QjpGy&icp=1&.intl=us&sig=IZTPDXRF2rQUkOxFchvFkA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8d5c9b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4654363320257116&mkt=en-US&setlang=en-US&w=vjxM6uNIprpEj3zDgU8piymWNMZxfsvw&icp=1&.intl=us&sig=93VBXMuLCgfXu1_9uenfEg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4654363320257116&mkt=en-US&setlang=en-US&w=vjxM6uNIprpEj3zDgU8piymWNMZxfsvw&icp=1&.intl=us&sig=93VBXMuLCgfXu1_9uenfEg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8c1bc50>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4878298595264456&mkt=en-US&setlang=en-US&w=K3T6rBvQMpGqZNzMGCiKPZxY-317B35a&icp=1&.intl=us&sig=tnOXtB0FtuAnhFrjxobt7Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Hepatitis+C+Managing&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Hepatitis+C+Managing&d=4878298595264456&mkt=en-US&setlang=en-US&w=K3T6rBvQMpGqZNzMGCiKPZxY-317B35a&icp=1&.intl=us&sig=tnOXtB0FtuAnhFrjxobt7Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a945c898>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4893386839951627&mkt=en-US&setlang=en-US&w=7a2wnBxHZQexQXYq1U8XDftxhgWD9dFT&icp=1&.intl=us&sig=2TUUF0y59TL9YYXiyQ1KYQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4893386839951627&mkt=en-US&setlang=en-US&w=7a2wnBxHZQexQXYq1U8XDftxhgWD9dFT&icp=1&.intl=us&sig=2TUUF0y59TL9YYXiyQ1KYQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9214ef0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=5003685896979266&mkt=en-US&setlang=en-US&w=AtvpEYxS-_vjaaee0vYeQ3bvJNImW9nN&icp=1&.intl=us&sig=QRBxnxIWufmnkv0cqCPAfg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=5003685896979266&mkt=en-US&setlang=en-US&w=AtvpEYxS-_vjaaee0vYeQ3bvJNImW9nN&icp=1&.intl=us&sig=QRBxnxIWufmnkv0cqCPAfg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8715588>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to https://www.carmax.com/cars/bmw/luxury-vehicles : ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Error during requests to http://10.251.16.20/search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4730023490882296&mkt=en-US&setlang=en-US&w=ECkoVZlufY9m912RgCB4-e1BYbSb33NA&icp=1&.intl=us&sig=thsmIQIUHBw3uscizsLqrQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4730023490882296&mkt=en-US&setlang=en-US&w=ECkoVZlufY9m912RgCB4-e1BYbSb33NA&icp=1&.intl=us&sig=thsmIQIUHBw3uscizsLqrQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8719400>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4880519112820436&mkt=en-US&setlang=en-US&w=aIJ3lQTxr-mrZ1JrmH8nq4qHk8cVzxTW&icp=1&.intl=us&sig=Ybo3sn5BPHBBYoN1V16oPw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4880519112820436&mkt=en-US&setlang=en-US&w=aIJ3lQTxr-mrZ1JrmH8nq4qHk8cVzxTW&icp=1&.intl=us&sig=Ybo3sn5BPHBBYoN1V16oPw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a9966550>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4561342980096640&mkt=en-US&setlang=en-US&w=5FDcLU8La74aQhrCCidEO8Qpeehg45tY&icp=1&.intl=us&sig=W.I83sdj8qvtTsmqO8DL6A-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Luxury+BMW+Sedans&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Luxury+BMW+Sedans&d=4561342980096640&mkt=en-US&setlang=en-US&w=5FDcLU8La74aQhrCCidEO8Qpeehg45tY&icp=1&.intl=us&sig=W.I83sdj8qvtTsmqO8DL6A-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8f06fd0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4820707435022059&mkt=en-US&setlang=en-US&w=PYeQuoTtXvmQNFv95B7wB2dux3Hynho0&icp=1&.intl=us&sig=OKj_gZgQYLm24jMaOPuQ4A-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4820707435022059&mkt=en-US&setlang=en-US&w=PYeQuoTtXvmQNFv95B7wB2dux3Hynho0&icp=1&.intl=us&sig=OKj_gZgQYLm24jMaOPuQ4A-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a875b048>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4543518859330716&mkt=en-US&setlang=en-US&w=3Mf75fpckLMSJztQOVuqDBS4AQhbk7Fb&icp=1&.intl=us&sig=EveGyJDXJRcz62jNA3lTIA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4543518859330716&mkt=en-US&setlang=en-US&w=3Mf75fpckLMSJztQOVuqDBS4AQhbk7Fb&icp=1&.intl=us&sig=EveGyJDXJRcz62jNA3lTIA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a86be048>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4679162498974704&mkt=en-US&setlang=en-US&w=cPnDWLkoIPxP1ikWyqFJnXoGh-WuPvIC&icp=1&.intl=us&sig=VKotEiW8mmIPX_RDzOxTfg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4679162498974704&mkt=en-US&setlang=en-US&w=cPnDWLkoIPxP1ikWyqFJnXoGh-WuPvIC&icp=1&.intl=us&sig=VKotEiW8mmIPX_RDzOxTfg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8666588>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=5007177662989901&mkt=en-US&setlang=en-US&w=cgAljbjGOXrlAE_w1LWdXc6QxbvroDtz&icp=1&.intl=us&sig=EF1EiA84b0xJjdbOMwhUvQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=5007177662989901&mkt=en-US&setlang=en-US&w=cgAljbjGOXrlAE_w1LWdXc6QxbvroDtz&icp=1&.intl=us&sig=EF1EiA84b0xJjdbOMwhUvQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a875c278>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4971443600492852&mkt=en-US&setlang=en-US&w=gpINoLVBfyzUwHMXArXvynOLZFGq0sXv&icp=1&.intl=us&sig=JMlT6gSYsqLCstHhj5JiNg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4971443600492852&mkt=en-US&setlang=en-US&w=gpINoLVBfyzUwHMXArXvynOLZFGq0sXv&icp=1&.intl=us&sig=JMlT6gSYsqLCstHhj5JiNg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a89467b8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4912082822629100&mkt=en-US&setlang=en-US&w=VEd5qvZ7_Sy5wc6nTbGs8L8B6fIB6NfS&icp=1&.intl=us&sig=1QrwaTGjVkIwjU4KyO.B4Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4912082822629100&mkt=en-US&setlang=en-US&w=VEd5qvZ7_Sy5wc6nTbGs8L8B6fIB6NfS&icp=1&.intl=us&sig=1QrwaTGjVkIwjU4KyO.B4Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8610c88>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=3309957111525&mkt=en-US&setlang=en-US&w=2XpggrZgSiFco2UzAPLfkam3QuBI3_s9&icp=1&.intl=us&sig=Azr0GeobbdVlcnok1B6ARw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=3309957111525&mkt=en-US&setlang=en-US&w=2XpggrZgSiFco2UzAPLfkam3QuBI3_s9&icp=1&.intl=us&sig=Azr0GeobbdVlcnok1B6ARw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8a27ac8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4635791921775597&mkt=en-US&setlang=en-US&w=MhlV9KJk1W08HSigaYnAJWwzd8OgyGOb&icp=1&.intl=us&sig=Jb8lI1k5OXx1mHRLMXjn1w-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Michelle+Obama&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Michelle+Obama&d=4635791921775597&mkt=en-US&setlang=en-US&w=MhlV9KJk1W08HSigaYnAJWwzd8OgyGOb&icp=1&.intl=us&sig=Jb8lI1k5OXx1mHRLMXjn1w-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a85b3978>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4851004087140527&mkt=en-US&setlang=en-US&w=l8esAYJrIsed-wgbUQoo8CFZO__y3Gow&icp=1&.intl=us&sig=vjW7cJmSl8UbW13mYrvxfQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4851004087140527&mkt=en-US&setlang=en-US&w=l8esAYJrIsed-wgbUQoo8CFZO__y3Gow&icp=1&.intl=us&sig=vjW7cJmSl8UbW13mYrvxfQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab5c4f60>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4602656234669266&mkt=en-US&setlang=en-US&w=Yv3VxPp7BkQtC7t236HcQ_89F4cMQ236&icp=1&.intl=us&sig=I6PEtpW6A9CfXSliPbfWjw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4602656234669266&mkt=en-US&setlang=en-US&w=Yv3VxPp7BkQtC7t236HcQ_89F4cMQ236&icp=1&.intl=us&sig=I6PEtpW6A9CfXSliPbfWjw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00aaa0e7f0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4627889164715426&mkt=en-US&setlang=en-US&w=wkNoII3hjeI4hT0xZbl2SWDMF9d5kVRU&icp=1&.intl=us&sig=nABD7gMZhhEUetHcX_u_HA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4627889164715426&mkt=en-US&setlang=en-US&w=wkNoII3hjeI4hT0xZbl2SWDMF9d5kVRU&icp=1&.intl=us&sig=nABD7gMZhhEUetHcX_u_HA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a93ce6d8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4982666344006898&mkt=en-US&setlang=en-US&w=uZYVchiOTB3Z2r1J34BcddtU-GL6B8_C&icp=1&.intl=us&sig=fwJAF19lBjwjnAAF3uZExw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4982666344006898&mkt=en-US&setlang=en-US&w=uZYVchiOTB3Z2r1J34BcddtU-GL6B8_C&icp=1&.intl=us&sig=fwJAF19lBjwjnAAF3uZExw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a98b7128>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4949268651640543&mkt=en-US&setlang=en-US&w=zWHJlTYUwSHKqtlogtQzf3ogq30D5ipg&icp=1&.intl=us&sig=IHPA25I9H9REJz3PAQnj_Q-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4949268651640543&mkt=en-US&setlang=en-US&w=zWHJlTYUwSHKqtlogtQzf3ogq30D5ipg&icp=1&.intl=us&sig=IHPA25I9H9REJz3PAQnj_Q-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab398dd8>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4807908415113206&mkt=en-US&setlang=en-US&w=ZZfSLMfL1PyKYmjSrYHBT2UOWKNNdt41&icp=1&.intl=us&sig=_DkrakOQz4VBRU1BXrYhLA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4807908415113206&mkt=en-US&setlang=en-US&w=ZZfSLMfL1PyKYmjSrYHBT2UOWKNNdt41&icp=1&.intl=us&sig=_DkrakOQz4VBRU1BXrYhLA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a92ede48>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4930224749543849&mkt=en-US&setlang=en-US&w=qFD5Eu8BQ4HCAYvgDGKR5biuPbufCwlA&icp=1&.intl=us&sig=M42kKHItAaK82ohlGtetnw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Workers+Compensation+Insurance&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Workers+Compensation+Insurance&d=4930224749543849&mkt=en-US&setlang=en-US&w=qFD5Eu8BQ4HCAYvgDGKR5biuPbufCwlA&icp=1&.intl=us&sig=M42kKHItAaK82ohlGtetnw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8d4e828>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4969931729733040&mkt=en-US&setlang=en-US&w=q0tBKGNR9LHUEDAC-2ASyMITpWYBUTMQ&icp=1&.intl=us&sig=kqe58d8MBKfxElbwV6XFfg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4969931729733040&mkt=en-US&setlang=en-US&w=q0tBKGNR9LHUEDAC-2ASyMITpWYBUTMQ&icp=1&.intl=us&sig=kqe58d8MBKfxElbwV6XFfg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a893d198>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4981240368792784&mkt=en-US&setlang=en-US&w=w7iBknlpQD_ZNLyIMVBOEp3OQBQ0j73L&icp=1&.intl=us&sig=WAZMxXABp3IwS0ZKEiUatw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4981240368792784&mkt=en-US&setlang=en-US&w=w7iBknlpQD_ZNLyIMVBOEp3OQBQ0j73L&icp=1&.intl=us&sig=WAZMxXABp3IwS0ZKEiUatw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8a6e7f0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=2622875180512&mkt=en-US&setlang=en-US&w=OWhQ4etfccTprE86jtZx_bcQ7kMo8-Mr&icp=1&.intl=us&sig=EmTushTqGvXa8e3y_AMTjQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=2622875180512&mkt=en-US&setlang=en-US&w=OWhQ4etfccTprE86jtZx_bcQ7kMo8-Mr&icp=1&.intl=us&sig=EmTushTqGvXa8e3y_AMTjQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8853400>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=1248494369243&mkt=en-US&setlang=en-US&w=5A8r6Sm0FmNR77kxF3MCKNaUsOlIpu5g&icp=1&.intl=us&sig=7fobY8OQ0.fKXSWZO0VgnA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=1248494369243&mkt=en-US&setlang=en-US&w=5A8r6Sm0FmNR77kxF3MCKNaUsOlIpu5g&icp=1&.intl=us&sig=7fobY8OQ0.fKXSWZO0VgnA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a87382b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4911760688087172&mkt=en-US&setlang=en-US&w=9JPF-YvnIa65nARlSzrZajMUEHLppP3Z&icp=1&.intl=us&sig=3mxOZw0GdAdSpne1hFZY_g-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4911760688087172&mkt=en-US&setlang=en-US&w=9JPF-YvnIa65nARlSzrZajMUEHLppP3Z&icp=1&.intl=us&sig=3mxOZw0GdAdSpne1hFZY_g-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8bcb828>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4888490591453530&mkt=en-US&setlang=en-US&w=vQFTVcYTjTSvBw7ltuh1MWHjyCs7KPnz&icp=1&.intl=us&sig=rwFHRvI47QqDnVOTcKgtxg-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=4888490591453530&mkt=en-US&setlang=en-US&w=vQFTVcYTjTSvBw7ltuh1MWHjyCs7KPnz&icp=1&.intl=us&sig=rwFHRvI47QqDnVOTcKgtxg-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a83efe80>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=492551540583&mkt=en-US&setlang=en-US&w=87cc45PJDhUGBSjdhb9yAFBDjVHucujz&icp=1&.intl=us&sig=ricWaLslTw0Qdj.MCREfog-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=492551540583&mkt=en-US&setlang=en-US&w=87cc45PJDhUGBSjdhb9yAFBDjVHucujz&icp=1&.intl=us&sig=ricWaLslTw0Qdj.MCREfog-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a835f518>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=1660815629354&mkt=en-US&setlang=en-US&w=_VoCQXRGFIdO4g8gB7ibP7HPYZCPR1yZ&icp=1&.intl=us&sig=0L6DUtt2Jrj_An7UVN1pEQ-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Becca+Kufrin&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Becca+Kufrin&d=1660815629354&mkt=en-US&setlang=en-US&w=_VoCQXRGFIdO4g8gB7ibP7HPYZCPR1yZ&icp=1&.intl=us&sig=0L6DUtt2Jrj_An7UVN1pEQ-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab4972b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Sharna+Burgess&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Sharna+Burgess&d=4784895970968709&mkt=en-US&setlang=en-US&w=YiTbLRq19s1_6zMUJhQs5atEqNDEA3qc&icp=1&.intl=us&sig=I4L9h73Les_5cLUwzu3wRw-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Sharna+Burgess&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Sharna+Burgess&d=4784895970968709&mkt=en-US&setlang=en-US&w=YiTbLRq19s1_6zMUJhQs5atEqNDEA3qc&icp=1&.intl=us&sig=I4L9h73Les_5cLUwzu3wRw-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00ab398b00>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+Error during requests to http://10.251.16.20/search/srpcache?p=Sharna+Burgess&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Sharna+Burgess&d=4723477958952608&mkt=en-US&setlang=en-US&w=Aw4x39Es4ypj_VTgVDcpY7fUpgIVsW1E&icp=1&.intl=us&sig=y0Ub4uK32pkmMzKT.H6ZJA-- : HTTPConnectionPool(host='10.251.16.20', port=80): Max retries exceeded with url: /search/srpcache?p=Sharna+Burgess&fr=fp-tts&ei=UTF-8&u=http://cc.bingj.com/cache.aspx?q=Sharna+Burgess&d=4723477958952608&mkt=en-US&setlang=en-US&w=Aw4x39Es4ypj_VTgVDcpY7fUpgIVsW1E&icp=1&.intl=us&sig=y0Ub4uK32pkmMzKT.H6ZJA-- (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f00a8eae0b8>: Failed to establish a new connection: [Errno 110] Connection timed out',))[2018-05-25 04:15:03,261] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 175, in api_URLFIND
+    results = BFS_Search(urlList,1)
+  File "crawler.py", line 189, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 188, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 216, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 105, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 119, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+198.24.30.126 - - [25/May/2018 04:15:03] "POST /findurl HTTP/1.1" 500 -
+198.24.30.126 - - [25/May/2018 04:15:03] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [25/May/2018 04:15:03] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [25/May/2018 04:15:03] "OPTIONS /findurl HTTP/1.1" 200 -
+198.24.30.126 - - [25/May/2018 04:15:03] "OPTIONS /findurl HTTP/1.1" 200 -
+174.215.12.162 - - [25/May/2018 04:15:03] "OPTIONS /findurl HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "crawler.py", line 17, in <module>
+    from Tools.demo import eiffel
+ImportError: No module named 'Tools'
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+104.185.157.36 - - [26/May/2018 15:31:59] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [26/May/2018 18:56:43] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [26/May/2018 18:58:49] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [26/May/2018 19:02:05] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [26/May/2018 19:05:15] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [26/May/2018 19:08:57] "POST /findurl HTTP/1.1" 200 -
+ * Running on http://172.31.22.173:5006/ (Press CTRL+C to quit)
+104.185.157.36 - - [27/May/2018 01:35:37] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 01:39:40] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 01:39:42] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 01:40:54] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 01:41:11] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:10:50] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:10:51] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:11:15] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:11:16] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:11:40] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:11:41] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:12:07] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:12:07] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:14:42] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:14:42] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:15:01] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:15:02] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:15:26] "OPTIONS /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:15:26] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:19:55] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:00] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:04] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:09] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:11] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:15] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:23] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:25] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:28] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:32] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:36] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:37] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:20:39] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:22:08] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:22:13] "POST /findurl HTTP/1.1" 200 -
+104.185.157.36 - - [27/May/2018 02:22:22] "POST /findurl HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "crawler.py", line 19, in <module>
+    from test.test_logging import LEVEL_RANGE
+ImportError: No module named 'test.test_logging'
+[2018-05-28 22:26:15,359] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 186, in api_URLFIND
+    results = BFS_Search(URLList,1)
+  File "crawler.py", line 207, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 206, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 254, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 110, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 130, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+[2018-05-29 00:32:40,976] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 186, in api_URLFIND
+    results = BFS_Search(URLList,1)
+  File "crawler.py", line 207, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 206, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 254, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 110, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 130, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+[2018-05-29 03:40:03,856] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 186, in api_URLFIND
+    results = BFS_Search(URLList,1)
+  File "crawler.py", line 207, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 206, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 254, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 110, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 130, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+[2018-05-29 12:42:13,986] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 186, in api_URLFIND
+    results = BFS_Search(URLList,1)
+  File "crawler.py", line 207, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 206, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 254, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 110, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 130, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+[2018-05-31 00:55:52,040] ERROR in app: Exception on /findurl [POST]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 186, in api_URLFIND
+    results = BFS_Search(URLList,1)
+  File "crawler.py", line 207, in BFS_Search
+    BFS_Search(URLList,targetdepth+1)
+  File "crawler.py", line 206, in BFS_Search
+    ReadURLOnPage(childurl.get('url',None),childurl.get('id',None),targetdepth+1,URLList)
+  File "crawler.py", line 254, in ReadURLOnPage
+    raw_html = simple_get(url)
+  File "crawler.py", line 110, in simple_get
+    if is_good_response(resp):
+  File "crawler.py", line 130, in is_good_response
+    content_type = resp.headers['Content-Type'].lower()
+  File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+Traceback (most recent call last):
+  File "crawler.py", line 304, in <module>
+    app.run(host= '172.31.22.173',port=5006)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 814, in run_simple
+    inner()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 774, in inner
+    fd=fd)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 666, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 577, in __init__
+    self.address_family), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+[2018-06-03 11:22:49,048] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 176, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+[2018-06-03 11:22:49,063] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 176, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+[2018-06-03 21:31:13,496] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 211, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
+[2018-06-03 21:31:13,499] ERROR in app: Exception on /findurl [GET]
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bitnami/.local/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "crawler.py", line 211, in api_URLFIND
+    setsearchTerm(searchTerm)
+UnboundLocalError: local variable 'searchTerm' referenced before assignment
