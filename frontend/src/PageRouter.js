@@ -5,6 +5,7 @@ import { InputPage } from './Input_Page';
 import Transition from 'react-transition-group/Transition';
 
 const API = 'http://52.39.153.11:5006/findurl';
+const localAPI = 'http://127.0.0.1:5006/findurl'
 
 const duration = 300;
 
@@ -90,7 +91,8 @@ export class PageRouter extends Component {
   handleAPIRequest(dataIn) {
     this.setState({ isLoading: true, hasLoaded: false, showLoading: true });
         // Create the formdata Body
-    fetch(API, {
+    fetch(/*API*/
+      localAPI, {
       method: 'POST', 
       mode: 'cors', 
       body: JSON.stringify(dataIn),
